@@ -617,6 +617,105 @@
       animation: favBounce 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)
     }
 
+    /* ======== Find Dancer Modal ======== */
+    .find-dancer-modal {
+      border: none;
+      border-radius: var(--radius-card);
+      padding: 0;
+      width: 100%;
+      max-width: 600px;
+      height: 80vh;
+      max-height: 800px;
+      background: var(--bg-color);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+      flex-direction: column;
+    }
+
+    .find-dancer-modal::backdrop {
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(2px);
+    }
+
+    .find-dancer-modal[open] {
+      display: flex;
+      animation: slideUp 0.3s ease-out;
+    }
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .modal-header {
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .modal-header h2 {
+      font-size: 18px;
+      font-weight: 700;
+      margin: 0;
+      color: var(--text-primary);
+    }
+
+    .close-btn {
+      background: none;
+      border: none;
+      padding: 8px;
+      color: var(--text-tertiary);
+      cursor: pointer;
+    }
+
+    .modal-body {
+      flex: 1;
+      overflow-y: auto;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .find-results-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .find-placeholder {
+      text-align: center;
+      color: var(--text-tertiary);
+      margin-top: 40px;
+      font-size: 14px;
+    }
+
+    .modal-footer {
+      padding: 16px;
+      border-top: 1px solid rgba(0, 0, 0, 0.05);
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .done-btn {
+      background: var(--text-primary);
+      color: #fff;
+      border: none;
+      padding: 10px 24px;
+      border-radius: var(--radius-pill);
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
     /* ======== Empty States ======== */
     .empty-state {
       display: flex;
@@ -1044,6 +1143,46 @@
       </div>
     </div>
 
+    <!-- Find Dancer Modal -->
+    <dialog id="findDancerDialog" class="find-dancer-modal">
+      <div class="modal-header">
+        <h2>Find Routines</h2>
+        <button class="close-btn" onclick="closeFindDancerModal()">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="search-bar">
+          <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="findDancerInput" placeholder="Search routine name or ID (e.g. 101)" autocomplete="off">
+          <button id="findDancerClear" class="search-clear" hidden onclick="clearFindDancerSearch()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+        <div id="findDancerResults" class="find-results-list">
+          <!-- Results will act here -->
+          <div class="find-placeholder">
+            <p>Search by routine name or ID number to add to your list.</p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="done-btn" onclick="closeFindDancerModal()">Done</button>
+      </div>
+    </dialog>
+
     <div class="card-list" id="cardList"></div>
 
     <div class="empty-state" id="emptyFavorites" hidden>
@@ -1055,7 +1194,7 @@
       <div class="empty-heading">Save your dancer's routines</div>
       <div class="empty-text">Tap the star on any dance to add it here. You'll get countdown alerts as your dancer's
         turn approaches.</div>
-      <button class="empty-btn" id="emptyBrowseBtn">Browse All Dances</button>
+      <button class="empty-btn" id="emptyBrowseBtn" onclick="openFindDancerModal()">Find Routines</button>
     </div>
 
     <div class="empty-state" id="emptySearch" hidden>
@@ -1211,6 +1350,88 @@
     }
 
     // ============================================================
+    // Find Dancer Modal Logic
+    // ============================================================
+    function openFindDancerModal() {
+      findDancerDialog.showModal();
+      findDancerInput.focus();
+      renderFindResults('');
+    }
+
+    function closeFindDancerModal() {
+      findDancerDialog.close();
+      // Refresh the main list in case favorites changed
+      if (state.activeTab === 'favorites') {
+        renderCards();
+      }
+    }
+
+    function clearFindDancerSearch() {
+      findDancerInput.value = '';
+      renderFindResults('');
+      findDancerInput.focus();
+    }
+
+    // Expose to window so HTML onclicks work
+    window.openFindDancerModal = openFindDancerModal;
+    window.closeFindDancerModal = closeFindDancerModal;
+    window.clearFindDancerSearch = clearFindDancerSearch;
+
+    findDancerInput.addEventListener('input', (e) => {
+      renderFindResults(e.target.value);
+    });
+
+    function renderFindResults(query) {
+      const q = query.toLowerCase().trim();
+      findDancerClear.hidden = q.length === 0;
+
+      if (q.length === 0) {
+        findDancerResults.innerHTML = `
+                <div class="find-placeholder">
+                    <p>Search by routine name (e.g. "Big Time") or ID (e.g. "101")</p>
+                </div>
+            `;
+        return;
+      }
+
+      const hits = state.entries.filter(e =>
+        e.title.toLowerCase().includes(q) ||
+        e.entryId.toLowerCase().includes(q)
+      ).slice(0, 50); // Limit results for performance
+
+      if (hits.length === 0) {
+        findDancerResults.innerHTML = `
+                <div class="find-placeholder">
+                    <p>No routines found matching "${escapeHTML(query)}"</p>
+                </div>
+            `;
+        return;
+      }
+
+      findDancerResults.innerHTML = hits.map(e => {
+        const isFav = state.favorites.has(e.entryId);
+        return `
+                <div class="card" style="padding: 8px 12px; grid-template-columns: 32px 1fr auto; align-items: center;">
+                    <div class="card-badge" style="width: 32px; height: 32px; font-size: 11px;">${e.entryId}</div>
+                    <div class="card-content">
+                        <div class="card-title" style="font-size: 14px;">${escapeHTML(e.title)}</div>
+                        <div class="card-meta">
+                            <span>Day ${e.day}</span>
+                            <span class="meta-dot">·</span>
+                            <span>${escapeHTML(e.time)}</span>
+                        </div>
+                    </div>
+                    <button class="fav-btn ${isFav ? 'active' : ''}" onclick="toggleFavorite('${e.entryId}', this)" data-entry-id="${e.entryId}">
+                        <svg class="star-icon" width="20" height="20" viewBox="0 0 24 24" fill="${isFav ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                    </button>
+                </div>
+            `;
+      }).join('');
+    }
+
+    // ============================================================
     // Data Loading
     // ============================================================
     async function loadSchedule() {
@@ -1287,6 +1508,22 @@
         if (e.genre) genres.add(e.genre);
         if (e.type) types.add(e.type);
       }
+
+      // Add "Find Routine" button if in My Dances (favorites) tab
+      const filterRow = document.querySelector('.filter-row');
+      const existingAddBtn = document.getElementById('addRoutineBtn');
+      if (existingAddBtn) existingAddBtn.remove();
+
+      if (state.activeTab === 'favorites') {
+        const btn = document.createElement('button');
+        btn.id = 'addRoutineBtn';
+        btn.className = 'filter-chip active';
+        btn.style.cssText = 'display: flex; align-items: center; gap: 4px; padding-left: 10px; padding-right: 12px; order: -1;';
+        btn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg> Add Routine`;
+        btn.onclick = openFindDancerModal;
+        filterRow.insertBefore(btn, filterRow.firstChild);
+      }
+
       fillSelect(filterStudio, [...studios].sort(), 'Studio ▾');
       fillSelect(filterAge, [...ages].sort(), 'Age ▾');
       fillSelect(filterGenre, [...genres].sort(), 'Genre ▾');
@@ -1377,7 +1614,7 @@
       } else {
         const isFav = state.favorites.has(entry.entryId);
         actionHTML = `
-          <button class="fav-btn ${isFav ? 'active' : ''}" onclick="toggleFavorite('${entry.entryId}', this)">
+          <button class="fav-btn ${isFav ? 'active' : ''}" onclick="toggleFavorite('${entry.entryId}', this)" data-entry-id="${entry.entryId}">
             <svg class="star-icon" width="22" height="22" viewBox="0 0 24 24" fill="${isFav ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
             </svg>
@@ -1599,6 +1836,7 @@
       filterGenre.value = '';
       filterType.value = '';
       [filterStudio, filterAge, filterGenre, filterType].forEach(s => s.classList.remove('has-value'));
+      populateFilters(); // Re-populate filters to update "Add Routine" button visibility
       renderCards();
     }
 
@@ -1622,6 +1860,7 @@
       filterGenre.value = '';
       filterType.value = '';
       [filterStudio, filterAge, filterGenre, filterType].forEach(s => s.classList.remove('has-value'));
+      populateFilters(); // Re-populate filters to update "Add Routine" button visibility
       renderCards();
       requestAnimationFrame(() => scrollToNowPlaying());
     }
@@ -1636,12 +1875,16 @@
         tabAll.classList.add('active');
         tabFavorites.classList.remove('active');
         renderCards();
+        populateFilters(); // Re-populate filters (to show/hide "Add Routine" button)
+        window.scrollTo(0, 0); // Reset scroll
       });
       tabFavorites.addEventListener('click', () => {
         state.activeTab = 'favorites';
         tabFavorites.classList.add('active');
         tabAll.classList.remove('active');
         renderCards();
+        populateFilters(); // Re-populate filters (to show/hide "Add Routine" button)
+        window.scrollTo(0, 0); // Reset scroll
       });
 
       // Search
