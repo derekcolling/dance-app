@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#3D4F3D">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>NYCDA KC 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ======== Custom Properties ======== */
+    :root {
+      --bg: #FAF8F5;
+      --card-bg: #FFFFFF;
+      --text-primary: #2D2A26;
+      --text-secondary: #6E695F;
+      --text-tertiary: #9C968C;
+      --header-bg: #3D4F3D;
+      --brand-green: #7A9B7D;
+      --green-active: #96B599;
+      --green-tint: #E8F0E9;
+      --sand: #EDE8E3;
+      --caramel-gold: #C4944E;
+      --favorite-bg: #FEF3E2;
+      --urgent: #C17767;
+      --soon: #D4A574;
+      --font-primary: 'DM Sans', sans-serif;
+      --font-accent: 'Source Serif 4', serif;
+      --radius-card: 14px;
+      --radius-pill: 9999px;
+      --radius-badge: 10px;
+      --shadow-sm: 0 1px 3px rgba(75,60,40,0.06);
+      --shadow-md: 0 2px 8px rgba(75,60,40,0.08);
+      --shadow-lg: 0 4px 16px rgba(75,60,40,0.12);
+    }
+
+    /* ======== Reset ======== */
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{-webkit-text-size-adjust:100%;overflow-x:hidden}
+    body{font-family:var(--font-primary);background:var(--bg);color:var(--text-primary);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;overflow-x:hidden;min-height:100dvh}
+    button{font:inherit;cursor:pointer;border:none;background:none}
+    input,select{font:inherit}
+
+    /* ======== Header ======== */
+    .header{position:sticky;top:0;z-index:100;height:48px;background:var(--header-bg);display:flex;align-items:center;padding:0 16px}
+    .header-inner{display:flex;align-items:center;justify-content:space-between;width:100%}
+    .brand{font-family:var(--font-accent);font-size:22px;font-weight:700;color:#fff;letter-spacing:-0.01em}
+    .connection-dot{width:6px;height:6px;border-radius:50%;background:var(--text-tertiary);transition:background 0.3s}
+    .connection-dot.connected{background:var(--green-active)}
+    .connection-dot.connecting{background:var(--soon);animation:dotPulse 1.5s ease-in-out infinite}
+
+    /* ======== Sticky Nav ======== */
+    .sticky-nav{position:sticky;top:48px;z-index:99;background:var(--bg)}
+
+    /* ======== Quick Glance ======== */
+    .quick-glance{height:44px;background:var(--card-bg);border-bottom:1px solid rgba(45,42,38,0.06);padding:0 16px;cursor:pointer;-webkit-tap-highlight-color:transparent}
+    .quick-glance[hidden]{display:none}
+    .quick-glance-inner{display:flex;align-items:center;justify-content:space-between;height:100%;gap:12px}
+    .quick-glance-content{display:flex;flex-direction:column;min-width:0;gap:1px}
+    .quick-glance-label{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--caramel-gold)}
+    .quick-glance-title{font-size:14px;font-weight:600;color:var(--text-primary);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .quick-glance-right{display:flex;align-items:center;gap:8px;flex-shrink:0}
+    .quick-glance-countdown{font-size:11px;font-weight:600;padding:3px 8px;border-radius:var(--radius-pill);white-space:nowrap}
+    .quick-glance-star{width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,#C4944E,#D4A574);display:flex;align-items:center;justify-content:center}
+
+    /* ======== Tabs ======== */
+    .tabs-wrapper{padding:6px 16px 8px;background:var(--bg)}
+    .tabs{display:flex;background:var(--sand);border-radius:var(--radius-pill);padding:3px}
+    .tab{flex:1;text-align:center;padding:7px 16px;border-radius:var(--radius-pill);font-size:13px;font-weight:600;color:var(--text-secondary);transition:all 0.2s ease;display:flex;align-items:center;justify-content:center;gap:6px;-webkit-tap-highlight-color:transparent}
+    .tab.active{background:var(--brand-green);color:#fff;box-shadow:var(--shadow-sm)}
+    .tab-badge{display:inline-flex;align-items:center;justify-content:center;min-width:18px;height:18px;padding:0 5px;border-radius:var(--radius-pill);font-size:11px;font-weight:700;background:var(--caramel-gold);color:#fff}
+    .tab.active .tab-badge{background:rgba(255,255,255,0.3)}
+
+    /* ======== Main ======== */
+    .main{padding:12px 16px 120px}
+
+    /* ======== Search ======== */
+    .search-bar{position:relative;margin-bottom:12px}
+    .search-icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--text-tertiary);pointer-events:none}
+    .search-input{width:100%;height:44px;padding:0 44px 0 42px;background:var(--card-bg);border:1.5px solid transparent;border-radius:var(--radius-card);font-size:15px;color:var(--text-primary);box-shadow:var(--shadow-sm);transition:border-color 0.2s,box-shadow 0.2s;outline:none}
+    .search-input::placeholder{color:var(--text-tertiary)}
+    .search-input:focus{border-color:var(--brand-green);box-shadow:0 0 0 3px rgba(122,155,125,0.15)}
+    .search-clear{position:absolute;right:6px;top:50%;transform:translateY(-50%);width:32px;height:32px;border-radius:50%;background:var(--sand);display:flex;align-items:center;justify-content:center;color:var(--text-secondary);transition:background 0.15s}
+    .search-clear:active{background:#ddd8d2}
+    .search-clear[hidden]{display:none}
+
+    /* ======== Filters ======== */
+    .filter-row{display:flex;gap:8px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;mask-image:linear-gradient(to right,transparent,black 8px,black calc(100% - 8px),transparent);-webkit-mask-image:linear-gradient(to right,transparent,black 8px,black calc(100% - 8px),transparent);padding:0 2px 12px;margin:0 -2px}
+    .filter-row::-webkit-scrollbar{display:none}
+    .filter-chip{flex-shrink:0;padding:7px 14px;border-radius:var(--radius-pill);font-size:13px;font-weight:500;background:var(--sand);color:var(--text-secondary);transition:all 0.2s;-webkit-tap-highlight-color:transparent}
+    .filter-chip.active{background:var(--green-active);color:#fff}
+    .filter-select-wrap{flex-shrink:0;position:relative}
+    .filter-select{appearance:none;-webkit-appearance:none;padding:7px 30px 7px 14px;border-radius:var(--radius-pill);font-size:13px;font-weight:500;background-color:var(--sand);color:var(--text-secondary);border:none;outline:none;cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236E695F' stroke-width='2.5' stroke-linecap='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 10px center;transition:all 0.2s}
+    .filter-select.has-value{background-color:var(--green-active);color:#fff;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2.5' stroke-linecap='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E")}
+
+    /* ======== Cards ======== */
+    .card-list{display:flex;flex-direction:column;gap:8px}
+    .card{display:grid;grid-template-columns:40px 1fr auto;align-items:start;gap:10px;padding:12px;background:var(--card-bg);border-radius:var(--radius-card);box-shadow:var(--shadow-sm);position:relative;transition:opacity 0.3s;border:1.5px solid transparent}
+    .card.passed{opacity:0.35}
+    .card.now-playing{border-color:var(--green-active);border-left:4px solid var(--brand-green);background:var(--green-tint)}
+    .card.now-playing::after{content:'';position:absolute;inset:0;border-radius:var(--radius-card);background:linear-gradient(90deg,transparent 0%,rgba(122,155,125,0.06) 50%,transparent 100%);background-size:200% 100%;animation:shimmer 3s ease-in-out infinite;pointer-events:none}
+    .card-badge{width:36px;height:34px;border-radius:var(--radius-badge);background:var(--sand);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:var(--text-secondary);flex-shrink:0}
+    .card.now-playing .card-badge{background:var(--brand-green);color:#fff}
+    .card-content{min-width:0;padding-top:2px}
+    .card-title{font-size:15px;font-weight:600;color:var(--text-primary);margin-bottom:3px;line-height:1.3}
+    .card-meta{display:flex;align-items:center;flex-wrap:wrap;gap:4px;font-size:12px;font-weight:500;color:var(--text-tertiary);line-height:1.4}
+    .studio-badge{display:inline-flex;align-items:center;padding:1px 7px;background:var(--header-bg);color:#fff;border-radius:var(--radius-pill);font-size:11px;font-weight:600;letter-spacing:0.02em}
+    .meta-dot{font-size:8px}
+    .card-countdown{display:inline-flex;align-items:center;margin-top:5px;padding:2px 8px;border-radius:var(--radius-pill);font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:0.05em}
+    .card-countdown.urgent{background:rgba(193,119,103,0.12);color:var(--urgent)}
+    .card-countdown.soon{background:rgba(212,165,116,0.12);color:var(--soon)}
+    .card-countdown.later{background:rgba(156,150,140,0.1);color:var(--text-tertiary)}
+    .now-label{position:absolute;top:8px;right:52px;display:flex;align-items:center;gap:4px;padding:2px 8px;border-radius:var(--radius-pill);background:var(--brand-green);color:#fff;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;z-index:1}
+    .pulse-dot{width:6px;height:6px;border-radius:50%;background:#fff;position:relative}
+    .pulse-dot::after{content:'';position:absolute;inset:-2px;border-radius:50%;background:rgba(255,255,255,0.5);animation:pulse 1.5s ease-in-out infinite}
+
+    /* ======== Favorite Button ======== */
+    .fav-btn{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--text-tertiary);transition:color 0.2s,background 0.2s;-webkit-tap-highlight-color:transparent;flex-shrink:0;align-self:center}
+    .fav-btn:active{transform:scale(0.92)}
+    .fav-btn.active{color:var(--caramel-gold);background:var(--favorite-bg)}
+    .fav-btn .star-icon{transition:transform 0.3s cubic-bezier(0.34,1.56,0.64,1)}
+    .fav-btn.active .star-icon{transform:rotate(72deg)}
+    .fav-bounce .star-icon{animation:favBounce 0.4s cubic-bezier(0.34,1.56,0.64,1)}
+
+    /* ======== Empty States ======== */
+    .empty-state{display:flex;flex-direction:column;align-items:center;text-align:center;padding:48px 24px}
+    .empty-state[hidden]{display:none}
+    .empty-icon{width:64px;height:64px;border-radius:50%;background:var(--sand);display:flex;align-items:center;justify-content:center;margin-bottom:16px;color:var(--text-tertiary)}
+    .empty-heading{font-family:var(--font-accent);font-size:20px;font-weight:600;color:var(--text-primary);margin-bottom:8px}
+    .empty-text{font-size:14px;color:var(--text-secondary);margin-bottom:20px;line-height:1.5}
+    .empty-btn{padding:10px 24px;background:var(--brand-green);color:#fff;border-radius:var(--radius-pill);font-size:14px;font-weight:600;transition:background 0.2s}
+    .empty-btn:active{background:var(--header-bg)}
+
+    /* ======== Skeleton ======== */
+    .skeleton-list{display:flex;flex-direction:column;gap:8px}
+    .skeleton-list[hidden]{display:none}
+    .skeleton-card{display:grid;grid-template-columns:40px 1fr 44px;align-items:center;gap:10px;padding:14px 12px;background:var(--card-bg);border-radius:var(--radius-card);box-shadow:var(--shadow-sm)}
+    .skel-badge{width:36px;height:34px;border-radius:var(--radius-badge)}
+    .skel-content{display:flex;flex-direction:column;gap:8px}
+    .skel-title{height:14px;width:65%;border-radius:7px}
+    .skel-meta{height:11px;width:85%;border-radius:5px}
+    .skel-fav{width:32px;height:32px;border-radius:50%;justify-self:center}
+    .skel-badge,.skel-title,.skel-meta,.skel-fav{background:linear-gradient(90deg,var(--sand) 25%,#f5f0eb 50%,var(--sand) 75%);background-size:200% 100%;animation:skeletonShimmer 1.5s ease-in-out infinite}
+
+    /* ======== FAB ======== */
+    .fab{position:fixed;bottom:24px;right:16px;width:52px;height:52px;border-radius:50%;background:var(--header-bg);color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-lg);z-index:90;transition:transform 0.2s cubic-bezier(0.34,1.56,0.64,1);-webkit-tap-highlight-color:transparent}
+    .fab:active{transform:scale(0.88)}
+    .fab.has-admin{bottom:80px}
+
+    /* ======== Admin ======== */
+    .admin-bar{position:fixed;bottom:0;left:0;right:0;height:56px;background:var(--header-bg);display:flex;align-items:center;justify-content:center;gap:12px;padding:0 16px;padding-bottom:env(safe-area-inset-bottom,0);z-index:95}
+    .admin-bar[hidden]{display:none}
+    .admin-btn{padding:8px 16px;background:rgba(255,255,255,0.15);color:#fff;border-radius:var(--radius-pill);font-size:13px;font-weight:600;transition:background 0.15s}
+    .admin-btn:active{background:rgba(255,255,255,0.25)}
+    .admin-current{color:#fff;font-size:14px;font-weight:700;min-width:50px;text-align:center}
+    .admin-jump{width:80px;height:36px;padding:0 10px;background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.2);border-radius:var(--radius-badge);color:#fff;font-size:13px;text-align:center;outline:none}
+    .admin-jump::placeholder{color:rgba(255,255,255,0.5)}
+    .admin-jump:focus{border-color:var(--green-active)}
+
+    /* ======== Keyframes ======== */
+    @keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
+    @keyframes pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(2.2);opacity:0}}
+    @keyframes dotPulse{0%,100%{opacity:1}50%{opacity:0.4}}
+    @keyframes skeletonShimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
+    @keyframes cardEnter{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes favBounce{0%{transform:scale(1)}30%{transform:scale(0.85)}60%{transform:scale(1.15) rotate(72deg)}100%{transform:scale(1) rotate(72deg)}}
+    .card-enter{animation:cardEnter 0.3s ease-out both}
+
+    /* ======== Reduced Motion ======== */
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important}}
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-inner">
+      <h1 class="brand">NYCDA KC</h1>
+      <div class="connection-dot connecting" id="connectionDot" title="Connecting..."></div>
+    </div>
+  </header>
+
+  <!-- STICKY NAV -->
+  <div class="sticky-nav">
+    <div class="quick-glance" id="quickGlance" hidden>
+      <div class="quick-glance-inner" id="quickGlanceBtn">
+        <div class="quick-glance-content">
+          <span class="quick-glance-label">YOUR NEXT DANCE</span>
+          <span class="quick-glance-title" id="quickGlanceTitle"></span>
+        </div>
+        <div class="quick-glance-right">
+          <span class="quick-glance-countdown" id="quickGlanceCountdown"></span>
+          <div class="quick-glance-star">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#fff" stroke="#fff" stroke-width="1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tabs-wrapper">
+      <div class="tabs">
+        <button class="tab active" data-tab="all" id="tabAll">All Dances</button>
+        <button class="tab" data-tab="favorites" id="tabFavorites">My Dances <span class="tab-badge" id="favCount" hidden>0</span></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN -->
+  <main class="main">
+    <div class="search-bar">
+      <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" class="search-input" id="searchInput" placeholder="Search routines, studios..." autocomplete="off">
+      <button class="search-clear" id="searchClear" hidden aria-label="Clear search">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <div class="filter-row" id="filterRow">
+      <button class="filter-chip active" id="dayChip1">Day 1</button>
+      <button class="filter-chip active" id="dayChip2">Day 2</button>
+      <div class="filter-select-wrap"><select class="filter-select" id="filterStudio"><option value="">Studio &#9662;</option></select></div>
+      <div class="filter-select-wrap"><select class="filter-select" id="filterAge"><option value="">Age &#9662;</option></select></div>
+      <div class="filter-select-wrap"><select class="filter-select" id="filterGenre"><option value="">Genre &#9662;</option></select></div>
+      <div class="filter-select-wrap"><select class="filter-select" id="filterType"><option value="">Type &#9662;</option></select></div>
+    </div>
+
+    <div class="skeleton-list" id="skeletonLoader">
+      <div class="skeleton-card"><div class="skel-badge"></div><div class="skel-content"><div class="skel-title"></div><div class="skel-meta"></div></div><div class="skel-fav"></div></div>
+      <div class="skeleton-card"><div class="skel-badge"></div><div class="skel-content"><div class="skel-title"></div><div class="skel-meta"></div></div><div class="skel-fav"></div></div>
+      <div class="skeleton-card"><div class="skel-badge"></div><div class="skel-content"><div class="skel-title"></div><div class="skel-meta"></div></div><div class="skel-fav"></div></div>
+      <div class="skeleton-card"><div class="skel-badge"></div><div class="skel-content"><div class="skel-title"></div><div class="skel-meta"></div></div><div class="skel-fav"></div></div>
+      <div class="skeleton-card"><div class="skel-badge"></div><div class="skel-content"><div class="skel-title"></div><div class="skel-meta"></div></div><div class="skel-fav"></div></div>
+      <div class="skeleton-card"><div class="skel-badge"></div><div class="skel-content"><div class="skel-title"></div><div class="skel-meta"></div></div><div class="skel-fav"></div></div>
+    </div>
+
+    <div class="card-list" id="cardList"></div>
+
+    <div class="empty-state" id="emptyFavorites" hidden>
+      <div class="empty-icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <div class="empty-heading">Save your dancer's routines</div>
+      <div class="empty-text">Tap the star on any dance to add it here. You'll get countdown alerts as your dancer's turn approaches.</div>
+      <button class="empty-btn" id="emptyBrowseBtn">Browse All Dances</button>
+    </div>
+
+    <div class="empty-state" id="emptySearch" hidden>
+      <div class="empty-icon">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      </div>
+      <div class="empty-heading">No dances found</div>
+      <div class="empty-text">Try a different search or clear your filters</div>
+    </div>
+  </main>
+
+  <!-- FAB -->
+  <button class="fab" id="fab" aria-label="Go to now playing">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v4m0 12v4M2 12h4m12 0h4"/></svg>
+  </button>
+
+  <!-- ADMIN -->
+  <div class="admin-bar" id="adminBar" hidden>
+    <button class="admin-btn" id="adminPrev">&larr; Prev</button>
+    <span class="admin-current" id="adminCurrent">#&mdash;</span>
+    <button class="admin-btn" id="adminNext">Next &rarr;</button>
+    <input type="text" class="admin-jump" id="adminJump" placeholder="Go to #" inputmode="text">
+  </div>
+
+  <script type="module">
+    // ============================================================
+    // Firebase
+    // ============================================================
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js';
+    import { getDatabase, ref, onValue, set } from 'https://www.gstatic.com/firebasejs/10.14.0/firebase-database.js';
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBuaOUnDmWuUuzUR2DI6zCnTZa2a2Lzx40",
+      authDomain: "dance-tracker-c3642.firebaseapp.com",
+      databaseURL: "https://dance-tracker-c3642-default-rtdb.firebaseio.com",
+      projectId: "dance-tracker-c3642",
+      storageBucket: "dance-tracker-c3642.firebasestorage.app",
+      messagingSenderId: "3000164671",
+      appId: "1:3000164671:web:647a87eeee6063aaf5338a"
+    };
+
+    let db;
+    try {
+      const app = initializeApp(firebaseConfig);
+      db = getDatabase(app);
+    } catch (e) {
+      console.warn('Firebase init failed:', e);
+    }
+
+    // ============================================================
+    // State
+    // ============================================================
+    const state = {
+      entries: [],
+      favorites: new Set(),
+      currentEntryIndex: -1,
+      activeTab: 'all',
+      searchQuery: '',
+      day1Active: true,
+      day2Active: true,
+      filterStudio: '',
+      filterAge: '',
+      filterGenre: '',
+      filterType: '',
+      isAdmin: new URLSearchParams(location.search).get('admin') === 'true',
+      isConnected: false,
+      loaded: false
+    };
+
+    const FAVORITES_KEY = 'nycda_favorites';
+    const MINUTES_PER_ENTRY = 3;
+
+    // ============================================================
+    // DOM
+    // ============================================================
+    const $ = id => document.getElementById(id);
+    const connectionDot = $('connectionDot');
+    const quickGlance = $('quickGlance');
+    const quickGlanceTitle = $('quickGlanceTitle');
+    const quickGlanceCountdown = $('quickGlanceCountdown');
+    const quickGlanceBtn = $('quickGlanceBtn');
+    const tabAll = $('tabAll');
+    const tabFavorites = $('tabFavorites');
+    const favCount = $('favCount');
+    const searchInput = $('searchInput');
+    const searchClear = $('searchClear');
+    const dayChip1 = $('dayChip1');
+    const dayChip2 = $('dayChip2');
+    const filterStudio = $('filterStudio');
+    const filterAge = $('filterAge');
+    const filterGenre = $('filterGenre');
+    const filterType = $('filterType');
+    const skeletonLoader = $('skeletonLoader');
+    const cardList = $('cardList');
+    const emptyFavorites = $('emptyFavorites');
+    const emptySearch = $('emptySearch');
+    const fab = $('fab');
+    const adminBar = $('adminBar');
+    const adminPrev = $('adminPrev');
+    const adminNext = $('adminNext');
+    const adminCurrent = $('adminCurrent');
+    const adminJump = $('adminJump');
+    const emptyBrowseBtn = $('emptyBrowseBtn');
+
+    // ============================================================
+    // Utilities
+    // ============================================================
+    function normalizeHomoglyphs(s) {
+      if (!s) return s;
+      return s.replace(/[\u0410\u0391]/g, 'A').replace(/\u0412/g, 'B')
+              .replace(/\u0421/g, 'C').replace(/\u0415/g, 'E')
+              .replace(/[\u041E\u039F]/g, 'O').replace(/\u0422/g, 'T')
+              .replace(/\u041D/g, 'H').replace(/\u041C/g, 'M').replace(/\u0420/g, 'P');
+    }
+
+    function parseTime(timeStr) {
+      const m = timeStr.match(/^(\d{1,2}):(\d{2})\s*(AM|PM)$/i);
+      if (!m) return 0;
+      let h = parseInt(m[1]), min = parseInt(m[2]);
+      const ampm = m[3].toUpperCase();
+      if (ampm === 'PM' && h !== 12) h += 12;
+      if (ampm === 'AM' && h === 12) h = 0;
+      return h * 60 + min;
+    }
+
+    const KNOWN_TYPES_2 = ['Small Production', 'Large Production', 'Extended Group', 'Extended Line'];
+    const KNOWN_TYPES_1 = ['Solo', 'Duo/Trio', 'Group', 'Line'];
+
+    function parseCategory(cat) {
+      if (!cat) return { ageGroup: '', genre: '', type: '' };
+      const words = cat.split(' ');
+      if (words.length < 3) return { ageGroup: words[0] || '', genre: '', type: words[1] || '' };
+      const ageGroup = words[0];
+      const last2 = words.slice(-2).join(' ');
+      if (KNOWN_TYPES_2.includes(last2)) {
+        return { ageGroup, genre: words.slice(1, -2).join(' '), type: last2 };
+      }
+      return { ageGroup, genre: words.slice(1, -1).join(' '), type: words[words.length - 1] };
+    }
+
+    function escapeHTML(s) {
+      const d = document.createElement('div');
+      d.textContent = s;
+      return d.innerHTML;
+    }
+
+    // ============================================================
+    // Data Loading
+    // ============================================================
+    async function loadSchedule() {
+      const resp = await fetch('schedule.json');
+      const raw = await resp.json();
+      return processEntries(raw);
+    }
+
+    function processEntries(raw) {
+      let dayBoundaryIdx = -1;
+      const entries = raw.map((e, i) => {
+        const entryId = normalizeHomoglyphs(e.entry_id);
+        const studioCode = normalizeHomoglyphs(e.studio_code);
+        const title = e.routine_title;
+        const category = normalizeHomoglyphs(e.category);
+        const time = e.approx_time;
+        const timeMin = parseTime(time);
+        const parsed = parseCategory(category);
+        return { entryId, studioCode, title, category, time, timeMin, ...parsed, index: i, day: 1 };
+      });
+      // Day boundary: PM→AM transition
+      for (let i = 1; i < entries.length; i++) {
+        if (entries[i - 1].timeMin > 720 && entries[i].timeMin < 720) {
+          dayBoundaryIdx = i;
+          break;
+        }
+      }
+      if (dayBoundaryIdx > 0) {
+        for (let i = dayBoundaryIdx; i < entries.length; i++) entries[i].day = 2;
+      }
+      return entries;
+    }
+
+    // ============================================================
+    // Favorites
+    // ============================================================
+    function loadFavorites() {
+      try {
+        const raw = localStorage.getItem(FAVORITES_KEY);
+        if (raw) state.favorites = new Set(JSON.parse(raw).map(String));
+      } catch {}
+    }
+
+    function saveFavorites() {
+      localStorage.setItem(FAVORITES_KEY, JSON.stringify([...state.favorites]));
+    }
+
+    function toggleFavorite(entryId) {
+      if (state.favorites.has(entryId)) {
+        state.favorites.delete(entryId);
+      } else {
+        state.favorites.add(entryId);
+      }
+      saveFavorites();
+      updateFavCount();
+      updateQuickGlance();
+      if (state.activeTab === 'favorites') renderCards();
+    }
+
+    function updateFavCount() {
+      const n = state.favorites.size;
+      favCount.textContent = n;
+      favCount.hidden = n === 0;
+    }
+
+    // ============================================================
+    // Filters
+    // ============================================================
+    function populateFilters() {
+      const studios = new Set(), ages = new Set(), genres = new Set(), types = new Set();
+      for (const e of state.entries) {
+        if (e.studioCode) studios.add(e.studioCode);
+        if (e.ageGroup) ages.add(e.ageGroup);
+        if (e.genre) genres.add(e.genre);
+        if (e.type) types.add(e.type);
+      }
+      fillSelect(filterStudio, [...studios].sort(), 'Studio ▾');
+      fillSelect(filterAge, [...ages].sort(), 'Age ▾');
+      fillSelect(filterGenre, [...genres].sort(), 'Genre ▾');
+      fillSelect(filterType, [...types].sort(), 'Type ▾');
+    }
+
+    function fillSelect(sel, values, placeholder) {
+      sel.innerHTML = `<option value="">${placeholder}</option>` +
+        values.map(v => `<option value="${escapeHTML(v)}">${escapeHTML(v)}</option>`).join('');
+    }
+
+    function getFilteredEntries() {
+      let list = state.entries;
+      if (state.activeTab === 'favorites') {
+        list = list.filter(e => state.favorites.has(e.entryId));
+      }
+      const bothDays = state.day1Active && state.day2Active;
+      const noDays = !state.day1Active && !state.day2Active;
+      if (!bothDays && !noDays) {
+        list = list.filter(e => e.day === (state.day1Active ? 1 : 2));
+      }
+      if (state.filterStudio) list = list.filter(e => e.studioCode === state.filterStudio);
+      if (state.filterAge) list = list.filter(e => e.ageGroup === state.filterAge);
+      if (state.filterGenre) list = list.filter(e => e.genre === state.filterGenre);
+      if (state.filterType) list = list.filter(e => e.type === state.filterType);
+      if (state.searchQuery) {
+        const q = state.searchQuery.toLowerCase();
+        list = list.filter(e =>
+          e.title.toLowerCase().includes(q) ||
+          e.studioCode.toLowerCase().includes(q) ||
+          e.category.toLowerCase().includes(q) ||
+          e.entryId.toLowerCase().includes(q)
+        );
+      }
+      return list;
+    }
+
+    // ============================================================
+    // Rendering
+    // ============================================================
+    function renderCards() {
+      const filtered = getFilteredEntries();
+      skeletonLoader.hidden = true;
+
+      if (filtered.length === 0) {
+        cardList.innerHTML = '';
+        if (state.activeTab === 'favorites' && state.favorites.size === 0 && !state.searchQuery) {
+          emptyFavorites.hidden = false;
+          emptySearch.hidden = true;
+        } else {
+          emptyFavorites.hidden = true;
+          emptySearch.hidden = false;
+        }
+        return;
+      }
+
+      emptyFavorites.hidden = true;
+      emptySearch.hidden = true;
+      cardList.innerHTML = filtered.map(e => buildCardHTML(e)).join('');
+
+      // Entrance animation (first 10 non-passed)
+      let animCount = 0;
+      for (const card of cardList.children) {
+        if (animCount >= 10) break;
+        if (!card.classList.contains('passed')) {
+          card.classList.add('card-enter');
+          card.style.animationDelay = `${animCount * 30}ms`;
+          animCount++;
+        }
+      }
+    }
+
+    function buildCardHTML(e) {
+      const isFav = state.favorites.has(e.entryId);
+      const isPassed = state.currentEntryIndex >= 0 && e.index < state.currentEntryIndex;
+      const isNow = state.currentEntryIndex >= 0 && e.index === state.currentEntryIndex;
+      const entriesAway = state.currentEntryIndex >= 0 ? e.index - state.currentEntryIndex : -1;
+
+      let cls = 'card';
+      if (isPassed) cls += ' passed';
+      if (isNow) cls += ' now-playing';
+
+      let countdownHTML = '';
+      if (isFav && !isPassed && !isNow && entriesAway > 0) {
+        const mins = entriesAway * MINUTES_PER_ENTRY;
+        let urgency = entriesAway <= 5 ? 'urgent' : entriesAway <= 15 ? 'soon' : 'later';
+        countdownHTML = `<div class="card-countdown ${urgency}">${entriesAway} away &middot; ~${mins}m</div>`;
+      }
+
+      const nowLabelHTML = isNow ? '<div class="now-label"><div class="pulse-dot"></div> NOW</div>' : '';
+
+      return `<div class="${cls}" data-entry-id="${e.entryId}" data-index="${e.index}">
+        ${nowLabelHTML}
+        <div class="card-badge">${e.entryId}</div>
+        <div class="card-content">
+          <div class="card-title">${escapeHTML(e.title)}</div>
+          <div class="card-meta">
+            <span class="studio-badge">${escapeHTML(e.studioCode)}</span>
+            <span class="meta-dot">&middot;</span>
+            <span>${escapeHTML(e.time)}</span>
+            <span class="meta-dot">&middot;</span>
+            <span>${escapeHTML(e.category)}</span>
+          </div>
+          ${countdownHTML}
+        </div>
+        <button class="fav-btn${isFav ? ' active' : ''}" data-entry-id="${e.entryId}" aria-label="${isFav ? 'Remove from favorites' : 'Add to favorites'}">
+          <svg class="star-icon" width="20" height="20" viewBox="0 0 24 24" fill="${isFav ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="${isFav ? '1' : '1.5'}">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+          </svg>
+        </button>
+      </div>`;
+    }
+
+    // ============================================================
+    // Quick Glance
+    // ============================================================
+    function updateQuickGlance() {
+      if (state.currentEntryIndex < 0 || state.favorites.size === 0) {
+        quickGlance.hidden = true;
+        return;
+      }
+      let nearest = null, nearestAway = Infinity;
+      for (const e of state.entries) {
+        if (state.favorites.has(e.entryId) && e.index > state.currentEntryIndex) {
+          const away = e.index - state.currentEntryIndex;
+          if (away < nearestAway) { nearestAway = away; nearest = e; }
+        }
+      }
+      if (!nearest) { quickGlance.hidden = true; return; }
+
+      quickGlance.hidden = false;
+      quickGlanceTitle.textContent = nearest.title;
+      const mins = nearestAway * MINUTES_PER_ENTRY;
+      quickGlanceCountdown.textContent = `${nearestAway} away · ~${mins}m`;
+
+      const urgency = nearestAway <= 5 ? 'urgent' : nearestAway <= 15 ? 'soon' : 'later';
+      quickGlanceCountdown.style.background =
+        urgency === 'urgent' ? 'rgba(193,119,103,0.15)' :
+        urgency === 'soon' ? 'rgba(212,165,116,0.15)' : 'rgba(156,150,140,0.1)';
+      quickGlanceCountdown.style.color =
+        urgency === 'urgent' ? 'var(--urgent)' :
+        urgency === 'soon' ? 'var(--soon)' : 'var(--text-tertiary)';
+      quickGlance.dataset.scrollToIndex = nearest.index;
+    }
+
+    // ============================================================
+    // Firebase Realtime
+    // ============================================================
+    function setupFirebase() {
+      if (!db) return;
+      const connRef = ref(db, '.info/connected');
+      onValue(connRef, snap => {
+        state.isConnected = snap.val() === true;
+        connectionDot.className = 'connection-dot ' + (state.isConnected ? 'connected' : 'connecting');
+        connectionDot.title = state.isConnected ? 'Connected' : 'Connecting...';
+      });
+
+      const entryRef = ref(db, 'competition/current_entry_index');
+      onValue(entryRef, snap => {
+        const val = snap.val();
+        state.currentEntryIndex = (val !== null && val !== undefined) ? parseInt(val, 10) : -1;
+        if (state.loaded) {
+          renderCards();
+          updateQuickGlance();
+          updateAdminDisplay();
+        }
+      });
+    }
+
+    // ============================================================
+    // Admin
+    // ============================================================
+    function setupAdmin() {
+      if (!state.isAdmin) return;
+      adminBar.hidden = false;
+      fab.classList.add('has-admin');
+
+      adminPrev.addEventListener('click', () => {
+        if (state.currentEntryIndex > 0) updateFirebaseEntry(state.currentEntryIndex - 1);
+      });
+      adminNext.addEventListener('click', () => {
+        if (state.currentEntryIndex < state.entries.length - 1) updateFirebaseEntry(state.currentEntryIndex + 1);
+      });
+      adminJump.addEventListener('keydown', ev => {
+        if (ev.key === 'Enter') {
+          const val = adminJump.value.trim();
+          const entry = state.entries.find(e => e.entryId === val);
+          if (entry) {
+            updateFirebaseEntry(entry.index);
+            adminJump.value = '';
+            adminJump.blur();
+          }
+        }
+      });
+    }
+
+    function updateFirebaseEntry(index) {
+      if (!db) return;
+      set(ref(db, 'competition/current_entry_index'), index);
+      set(ref(db, 'competition/updated_at'), new Date().toISOString());
+    }
+
+    function updateAdminDisplay() {
+      if (!state.isAdmin) return;
+      if (state.currentEntryIndex >= 0 && state.currentEntryIndex < state.entries.length) {
+        adminCurrent.textContent = '#' + state.entries[state.currentEntryIndex].entryId;
+      } else {
+        adminCurrent.textContent = '#\u2014';
+      }
+    }
+
+    // ============================================================
+    // Scroll Helpers
+    // ============================================================
+    function scrollToEntry(index) {
+      const card = cardList.querySelector(`[data-index="${index}"]`);
+      if (card) card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
+    function scrollToNowPlaying() {
+      if (state.currentEntryIndex >= 0) scrollToEntry(state.currentEntryIndex);
+    }
+
+    function resetFiltersAndGoToNow() {
+      state.activeTab = 'all';
+      tabAll.classList.add('active');
+      tabFavorites.classList.remove('active');
+      state.searchQuery = '';
+      searchInput.value = '';
+      searchClear.hidden = true;
+      state.day1Active = true;
+      state.day2Active = true;
+      dayChip1.classList.add('active');
+      dayChip2.classList.add('active');
+      state.filterStudio = '';
+      state.filterAge = '';
+      state.filterGenre = '';
+      state.filterType = '';
+      filterStudio.value = '';
+      filterAge.value = '';
+      filterGenre.value = '';
+      filterType.value = '';
+      [filterStudio, filterAge, filterGenre, filterType].forEach(s => s.classList.remove('has-value'));
+      renderCards();
+      requestAnimationFrame(() => scrollToNowPlaying());
+    }
+
+    // ============================================================
+    // Events
+    // ============================================================
+    function setupEvents() {
+      // Tabs
+      tabAll.addEventListener('click', () => {
+        state.activeTab = 'all';
+        tabAll.classList.add('active');
+        tabFavorites.classList.remove('active');
+        renderCards();
+      });
+      tabFavorites.addEventListener('click', () => {
+        state.activeTab = 'favorites';
+        tabFavorites.classList.add('active');
+        tabAll.classList.remove('active');
+        renderCards();
+      });
+
+      // Search
+      let searchTimer;
+      searchInput.addEventListener('input', () => {
+        clearTimeout(searchTimer);
+        searchClear.hidden = !searchInput.value;
+        searchTimer = setTimeout(() => {
+          state.searchQuery = searchInput.value.trim();
+          renderCards();
+        }, 200);
+      });
+      searchClear.addEventListener('click', () => {
+        searchInput.value = '';
+        searchClear.hidden = true;
+        state.searchQuery = '';
+        renderCards();
+        searchInput.focus();
+      });
+
+      // Day chips
+      dayChip1.addEventListener('click', () => {
+        state.day1Active = !state.day1Active;
+        dayChip1.classList.toggle('active', state.day1Active);
+        renderCards();
+      });
+      dayChip2.addEventListener('click', () => {
+        state.day2Active = !state.day2Active;
+        dayChip2.classList.toggle('active', state.day2Active);
+        renderCards();
+      });
+
+      // Dropdown filters
+      const selectHandler = (sel, key) => {
+        sel.addEventListener('change', () => {
+          state[key] = sel.value;
+          sel.classList.toggle('has-value', !!sel.value);
+          renderCards();
+        });
+      };
+      selectHandler(filterStudio, 'filterStudio');
+      selectHandler(filterAge, 'filterAge');
+      selectHandler(filterGenre, 'filterGenre');
+      selectHandler(filterType, 'filterType');
+
+      // Favorite clicks (delegated)
+      cardList.addEventListener('click', ev => {
+        const btn = ev.target.closest('.fav-btn');
+        if (!btn) return;
+        const entryId = btn.dataset.entryId;
+        const wasActive = btn.classList.contains('active');
+        toggleFavorite(entryId);
+
+        // Update this specific button in-place
+        btn.classList.toggle('active', !wasActive);
+        const svg = btn.querySelector('.star-icon');
+        if (!wasActive) {
+          svg.setAttribute('fill', 'currentColor');
+          svg.setAttribute('stroke-width', '1');
+          btn.classList.add('fav-bounce');
+          btn.addEventListener('animationend', () => btn.classList.remove('fav-bounce'), { once: true });
+        } else {
+          svg.setAttribute('fill', 'none');
+          svg.setAttribute('stroke-width', '1.5');
+          svg.style.transform = '';
+        }
+        btn.setAttribute('aria-label', !wasActive ? 'Remove from favorites' : 'Add to favorites');
+      });
+
+      // Quick Glance tap
+      quickGlanceBtn.addEventListener('click', () => {
+        const idx = parseInt(quickGlance.dataset.scrollToIndex);
+        if (!isNaN(idx)) {
+          resetFiltersAndGoToNow();
+          requestAnimationFrame(() => scrollToEntry(idx));
+        }
+      });
+
+      // FAB
+      fab.addEventListener('click', resetFiltersAndGoToNow);
+
+      // Browse All from empty state
+      emptyBrowseBtn.addEventListener('click', () => {
+        state.activeTab = 'all';
+        tabAll.classList.add('active');
+        tabFavorites.classList.remove('active');
+        renderCards();
+      });
+    }
+
+    // ============================================================
+    // Init
+    // ============================================================
+    async function init() {
+      loadFavorites();
+      updateFavCount();
+      setupEvents();
+      setupAdmin();
+      setupFirebase();
+
+      try {
+        state.entries = await loadSchedule();
+        populateFilters();
+        state.loaded = true;
+        renderCards();
+        updateQuickGlance();
+        updateAdminDisplay();
+      } catch (err) {
+        console.error('Failed to load schedule:', err);
+        skeletonLoader.hidden = true;
+        emptySearch.hidden = false;
+      }
+    }
+
+    init();
+  </script>
+</body>
+</html>

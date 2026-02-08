@@ -1,0 +1,3586 @@
+[
+    {
+        "entry_id": "1",
+        "routine_title": "Big Time",
+        "studio_code": "Q",
+        "category": "Junior Musical Theatre Solo",
+        "approx_time": "7:30 AM"
+    },
+    {
+        "entry_id": "2",
+        "routine_title": "Gimme Gimme",
+        "studio_code": "P",
+        "category": "Junior Musical Theatre Solo",
+        "approx_time": "7:33 AM"
+    },
+    {
+        "entry_id": "3",
+        "routine_title": "If You Hadn't",
+        "studio_code": "Q",
+        "category": "Junior Musical Theatre Solo",
+        "approx_time": "7:36 AM"
+    },
+    {
+        "entry_id": "4",
+        "routine_title": "How to disappear completely",
+        "studio_code": "G2",
+        "category": "Junior Open Solo",
+        "approx_time": "7:39 AM"
+    },
+    {
+        "entry_id": "5",
+        "routine_title": "Strongest Suit",
+        "studio_code": "Q",
+        "category": "Junior Musical Theatre Solo",
+        "approx_time": "7:42 AM"
+    },
+    {
+        "entry_id": "6",
+        "routine_title": "Record Player",
+        "studio_code": "S",
+        "category": "Junior Open Solo",
+        "approx_time": "7:45 AM"
+    },
+    {
+        "entry_id": "7",
+        "routine_title": "Paint it Black",
+        "studio_code": "J",
+        "category": "Junior Jazz Solo",
+        "approx_time": "7:48 AM"
+    },
+    {
+        "entry_id": "8",
+        "routine_title": "Eclipse",
+        "studio_code": "V",
+        "category": "Junior Open Solo",
+        "approx_time": "7:51 AM"
+    },
+    {
+        "entry_id": "9",
+        "routine_title": "Once I Was Loved",
+        "studio_code": "E",
+        "category": "Junior Open Solo",
+        "approx_time": "7:54 AM"
+    },
+    {
+        "entry_id": "10",
+        "routine_title": "Abducted",
+        "studio_code": "M2",
+        "category": "Junior Open Solo",
+        "approx_time": "7:57 AM"
+    },
+    {
+        "entry_id": "11",
+        "routine_title": "Fame",
+        "studio_code": "P",
+        "category": "Junior Open Solo",
+        "approx_time": "8:00 AM"
+    },
+    {
+        "entry_id": "12",
+        "routine_title": "Freakshow",
+        "studio_code": "Q",
+        "category": "Junior Open Solo",
+        "approx_time": "8:03 AM"
+    },
+    {
+        "entry_id": "13",
+        "routine_title": "All of Me",
+        "studio_code": "E",
+        "category": "Junior Open Solo",
+        "approx_time": "8:07 AM"
+    },
+    {
+        "entry_id": "14",
+        "routine_title": "Break My Soul",
+        "studio_code": "R",
+        "category": "Junior Tap Solo",
+        "approx_time": "8:10 AM"
+    },
+    {
+        "entry_id": "14A",
+        "routine_title": "Proud Mary",
+        "studio_code": "K2",
+        "category": "Junior Tap Solo",
+        "approx_time": "8:13 AM"
+    },
+    {
+        "entry_id": "15",
+        "routine_title": "Pretty Woman",
+        "studio_code": "G2",
+        "category": "Junior Tap Solo",
+        "approx_time": "8:16 AM"
+    },
+    {
+        "entry_id": "16",
+        "routine_title": "Mud-Stained Dress",
+        "studio_code": "S",
+        "category": "Junior Lyrical Solo",
+        "approx_time": "8:19 AM"
+    },
+    {
+        "entry_id": "17",
+        "routine_title": "My Own Way",
+        "studio_code": "J",
+        "category": "Junior Lyrical Solo",
+        "approx_time": "8:22 AM"
+    },
+    {
+        "entry_id": "18",
+        "routine_title": "My Memory",
+        "studio_code": "V",
+        "category": "Junior Lyrical Solo",
+        "approx_time": "8:25 AM"
+    },
+    {
+        "entry_id": "19",
+        "routine_title": "Dear Theodosia",
+        "studio_code": "M",
+        "category": "Junior Lyrical Solo",
+        "approx_time": "8:28 AM"
+    },
+    {
+        "entry_id": "19A",
+        "routine_title": "My Mistake",
+        "studio_code": "C",
+        "category": "Junior Lyrical Solo",
+        "approx_time": "8:31 AM"
+    },
+    {
+        "entry_id": "20",
+        "routine_title": "Broken",
+        "studio_code": "C",
+        "category": "Junior Lyrical Solo",
+        "approx_time": "8:34 AM"
+    },
+    {
+        "entry_id": "21",
+        "routine_title": "Welcome Home",
+        "studio_code": "P",
+        "category": "Junior Lyrical Solo",
+        "approx_time": "8:37 AM"
+    },
+    {
+        "entry_id": "22",
+        "routine_title": "Must Have Been Love",
+        "studio_code": "Ο",
+        "category": "Junior Lyrical Solo",
+        "approx_time": "8:40 AM"
+    },
+    {
+        "entry_id": "23",
+        "routine_title": "Open Your Heart",
+        "studio_code": "P",
+        "category": "Junior Lyrical Solo",
+        "approx_time": "8:44 AM"
+    },
+    {
+        "entry_id": "24",
+        "routine_title": "Rivers And Roads",
+        "studio_code": "H2",
+        "category": "Junior Lyrical Solo",
+        "approx_time": "8:47 AM"
+    },
+    {
+        "entry_id": "25",
+        "routine_title": "Stars",
+        "studio_code": "F2",
+        "category": "Junior Lyrical Solo",
+        "approx_time": "8:50 AM"
+    },
+    {
+        "entry_id": "26",
+        "routine_title": "Speak Through My Voice",
+        "studio_code": "T",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "8:53 AM"
+    },
+    {
+        "entry_id": "27",
+        "routine_title": "Summertime Blues",
+        "studio_code": "S",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "8:56 AM"
+    },
+    {
+        "entry_id": "28",
+        "routine_title": "The Crumbling",
+        "studio_code": "K",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "8:59 AM"
+    },
+    {
+        "entry_id": "29",
+        "routine_title": "Will the Night",
+        "studio_code": "E",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "9:02 AM"
+    },
+    {
+        "entry_id": "30",
+        "routine_title": "Come Home",
+        "studio_code": "Q",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "9:05 AM"
+    },
+    {
+        "entry_id": "31",
+        "routine_title": "A Few More Minutes",
+        "studio_code": "S",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "9:08 AM"
+    },
+    {
+        "entry_id": "32",
+        "routine_title": "Cloudbusting",
+        "studio_code": "K",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "9:11 AM"
+    },
+    {
+        "entry_id": "33",
+        "routine_title": "Tomorrow is a Long Time",
+        "studio_code": "E",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "9:14 AM"
+    },
+    {
+        "entry_id": "34",
+        "routine_title": "Fly On",
+        "studio_code": "K",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "9:17 AM"
+    },
+    {
+        "entry_id": "35",
+        "routine_title": "Snake Eyes",
+        "studio_code": "M2",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "9:21 AM"
+    },
+    {
+        "entry_id": "35A",
+        "routine_title": "Ava Maria",
+        "studio_code": "B",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "9:24 AM"
+    },
+    {
+        "entry_id": "37",
+        "routine_title": "The Logical Song",
+        "studio_code": "S",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "9:27 AM"
+    },
+    {
+        "entry_id": "38",
+        "routine_title": "Comes In Waves",
+        "studio_code": "K",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "9:30 AM"
+    },
+    {
+        "entry_id": "39",
+        "routine_title": "Featherstone",
+        "studio_code": "N2",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "9:33 AM"
+    },
+    {
+        "entry_id": "38A",
+        "routine_title": "17",
+        "studio_code": "L2",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "9:36 AM"
+    },
+    {
+        "entry_id": "41",
+        "routine_title": "Bodhi Solo",
+        "studio_code": "Y",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "9:39 AM"
+    },
+    {
+        "entry_id": "42",
+        "routine_title": "Slow Disco",
+        "studio_code": "E",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "9:42 AM"
+    },
+    {
+        "entry_id": "43",
+        "routine_title": "Broken Face",
+        "studio_code": "N",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "9:45 AM"
+    },
+    {
+        "entry_id": "44",
+        "routine_title": "Remains",
+        "studio_code": "A",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "9:48 AM"
+    },
+    {
+        "entry_id": "45",
+        "routine_title": "The People And I",
+        "studio_code": "E2",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "9:51 AM"
+    },
+    {
+        "entry_id": "46",
+        "routine_title": "Upon Our Shoulder",
+        "studio_code": "R",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "9:54 AM"
+    },
+    {
+        "entry_id": "47",
+        "routine_title": "Loose Control",
+        "studio_code": "N",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "9:58 AM"
+    },
+    {
+        "entry_id": "48",
+        "routine_title": "Sicily",
+        "studio_code": "A",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "10:01 AM"
+    },
+    {
+        "entry_id": "49",
+        "routine_title": "On Your Shore",
+        "studio_code": "Q",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "10:04 AM"
+    },
+    {
+        "entry_id": "47A",
+        "routine_title": "Change is Everything",
+        "studio_code": "02",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "10:07 AM"
+    },
+    {
+        "entry_id": "51",
+        "routine_title": "Ultra Violet",
+        "studio_code": "P",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "10:10 AM"
+    },
+    {
+        "entry_id": "52",
+        "routine_title": "That's Life",
+        "studio_code": "A2",
+        "category": "Junior Open Solo",
+        "approx_time": "10:13 AM"
+    },
+    {
+        "entry_id": "53",
+        "routine_title": "This Bitter Earth",
+        "studio_code": "V",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "10:16 AM"
+    },
+    {
+        "entry_id": "54",
+        "routine_title": "This Place",
+        "studio_code": "A",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "10:19 AM"
+    },
+    {
+        "entry_id": "55",
+        "routine_title": "Falling",
+        "studio_code": "E",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "10:22 AM"
+    },
+    {
+        "entry_id": "56",
+        "routine_title": "Buried Alive",
+        "studio_code": "C",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "10:25 AM"
+    },
+    {
+        "entry_id": "57",
+        "routine_title": "Sky Up",
+        "studio_code": "N",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "10:28 AM"
+    },
+    {
+        "entry_id": "58",
+        "routine_title": "Tangerine",
+        "studio_code": "L",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "10:31 AM"
+    },
+    {
+        "entry_id": "59",
+        "routine_title": "Us",
+        "studio_code": "G",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "10:35 AM"
+    },
+    {
+        "entry_id": "60",
+        "routine_title": "Made Of Stone",
+        "studio_code": "Q",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "10:38 AM"
+    },
+    {
+        "entry_id": "61",
+        "routine_title": "Reminds Me",
+        "studio_code": "K",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "10:41 AM"
+    },
+    {
+        "entry_id": "62",
+        "routine_title": "Shoulder To Shoulder",
+        "studio_code": "N",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "10:44 AM"
+    },
+    {
+        "entry_id": "62A",
+        "routine_title": "On the Precipice",
+        "studio_code": "J2",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "10:47 AM"
+    },
+    {
+        "entry_id": "63",
+        "routine_title": "The Moon",
+        "studio_code": "1",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "10:50 AM"
+    },
+    {
+        "entry_id": "64",
+        "routine_title": "To Be",
+        "studio_code": "A",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "10:53 AM"
+    },
+    {
+        "entry_id": "65",
+        "routine_title": "Broken",
+        "studio_code": "Q",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "10:56 AM"
+    },
+    {
+        "entry_id": "66",
+        "routine_title": "Solid Ground",
+        "studio_code": "Ο",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "10:59 AM"
+    },
+    {
+        "entry_id": "66A",
+        "routine_title": "Dracula",
+        "studio_code": "K2",
+        "category": "Junior Contemporary Solo",
+        "approx_time": "11:02 AM"
+    },
+    {
+        "entry_id": "67",
+        "routine_title": "Addicted to Love",
+        "studio_code": "K",
+        "category": "Junior Jazz Solo",
+        "approx_time": "11:05 AM"
+    },
+    {
+        "entry_id": "68",
+        "routine_title": "Stuff Like That There",
+        "studio_code": "V",
+        "category": "Junior Jazz Solo",
+        "approx_time": "11:08 AM"
+    },
+    {
+        "entry_id": "69",
+        "routine_title": "Le Jazz Hat",
+        "studio_code": "M2",
+        "category": "Junior Jazz Solo",
+        "approx_time": "11:12 AM"
+    },
+    {
+        "entry_id": "70",
+        "routine_title": "The Way You Make Me Feel",
+        "studio_code": "L",
+        "category": "Junior Jazz Solo",
+        "approx_time": "11:15 AM"
+    },
+    {
+        "entry_id": "70A",
+        "routine_title": "Forget Me Nots",
+        "studio_code": "G",
+        "category": "Junior Jazz Solo",
+        "approx_time": "11:18 AM"
+    },
+    {
+        "entry_id": "71",
+        "routine_title": "Fever",
+        "studio_code": "Q",
+        "category": "Junior Jazz Solo",
+        "approx_time": "11:21 AM"
+    },
+    {
+        "entry_id": "72",
+        "routine_title": "Tribe",
+        "studio_code": "N",
+        "category": "Junior Jazz Solo",
+        "approx_time": "11:24 AM"
+    },
+    {
+        "entry_id": "72A",
+        "routine_title": "Write My Own Story",
+        "studio_code": "J",
+        "category": "Junior Jazz Solo",
+        "approx_time": "11:27 AM"
+    },
+    {
+        "entry_id": "73",
+        "routine_title": "Idlewild",
+        "studio_code": "M2",
+        "category": "Junior Jazz Solo",
+        "approx_time": "11:30 AM"
+    },
+    {
+        "entry_id": "74",
+        "routine_title": "Fuerza",
+        "studio_code": "N",
+        "category": "Junior Jazz Solo",
+        "approx_time": "11:33 AM"
+    },
+    {
+        "entry_id": "75",
+        "routine_title": "What have you done for me lately",
+        "studio_code": "P",
+        "category": "Junior Jazz Solo",
+        "approx_time": "11:36 AM"
+    },
+    {
+        "entry_id": "76",
+        "routine_title": "Love Potion No 9",
+        "studio_code": "S",
+        "category": "Junior Jazz Solo",
+        "approx_time": "11:39 AM"
+    },
+    {
+        "entry_id": "77",
+        "routine_title": "Breaking Dishes",
+        "studio_code": "N",
+        "category": "Junior Jazz Solo",
+        "approx_time": "11:42 AM"
+    },
+    {
+        "entry_id": "78",
+        "routine_title": "Icon",
+        "studio_code": "F2",
+        "category": "Junior Jazz Solo",
+        "approx_time": "11:45 AM"
+    },
+    {
+        "entry_id": "79",
+        "routine_title": "Omigod You Guys",
+        "studio_code": "L",
+        "category": "Junior Musical Theatre Small Production",
+        "approx_time": "12:20 PM"
+    },
+    {
+        "entry_id": "80",
+        "routine_title": "He is Not Yet Dead",
+        "studio_code": "S",
+        "category": "Junior Musical Theatre Line",
+        "approx_time": "12:25 PM"
+    },
+    {
+        "entry_id": "81",
+        "routine_title": "Heart and Soul",
+        "studio_code": "E",
+        "category": "Junior Open Group",
+        "approx_time": "12:28 PM"
+    },
+    {
+        "entry_id": "82",
+        "routine_title": "Boo Boo",
+        "studio_code": "Q",
+        "category": "Junior Open Group",
+        "approx_time": "12:32 PM"
+    },
+    {
+        "entry_id": "83",
+        "routine_title": "Rain",
+        "studio_code": "M2",
+        "category": "Junior Open Group",
+        "approx_time": "12:35 PM"
+    },
+    {
+        "entry_id": "84",
+        "routine_title": "Ruby Blue",
+        "studio_code": "H2",
+        "category": "Junior Open Group",
+        "approx_time": "12:38 PM"
+    },
+    {
+        "entry_id": "85",
+        "routine_title": "Le Jazz Hot",
+        "studio_code": "P",
+        "category": "Junior Musical Theatre Duo/Trio",
+        "approx_time": "12:42 PM"
+    },
+    {
+        "entry_id": "86",
+        "routine_title": "Blind Date",
+        "studio_code": "Q",
+        "category": "Junior Musical Theatre Duo/Trio",
+        "approx_time": "12:45 PM"
+    },
+    {
+        "entry_id": "87",
+        "routine_title": "Tutta L'Italia",
+        "studio_code": "E",
+        "category": "Junior Open Small Production",
+        "approx_time": "12:48 PM"
+    },
+    {
+        "entry_id": "88",
+        "routine_title": "Hourglass",
+        "studio_code": "K",
+        "category": "Junior Contemporary Duo/Trio",
+        "approx_time": "12:53 PM"
+    },
+    {
+        "entry_id": "89",
+        "routine_title": "This Was Us",
+        "studio_code": "A",
+        "category": "Junior Contemporary Duo/Trio",
+        "approx_time": "12:56 PM"
+    },
+    {
+        "entry_id": "90",
+        "routine_title": "Never Dreamed",
+        "studio_code": "Q",
+        "category": "Junior Contemporary Duo/Trio",
+        "approx_time": "12:59 PM"
+    },
+    {
+        "entry_id": "91",
+        "routine_title": "Lazzarella",
+        "studio_code": "S",
+        "category": "Junior Contemporary Duo/Trio",
+        "approx_time": "1:02 PM"
+    },
+    {
+        "entry_id": "92",
+        "routine_title": "Boo Thing",
+        "studio_code": "H2",
+        "category": "Junior Open Duo/Trio",
+        "approx_time": "1:05 PM"
+    },
+    {
+        "entry_id": "93",
+        "routine_title": "Don't Let Your Babies Grow Up to be Cov",
+        "studio_code": "E",
+        "category": "Junior Open Line",
+        "approx_time": "1:08 PM"
+    },
+    {
+        "entry_id": "94",
+        "routine_title": "Stand By Me",
+        "studio_code": "L",
+        "category": "Junior Lyrical Duo/Trio",
+        "approx_time": "1:11 PM"
+    },
+    {
+        "entry_id": "95",
+        "routine_title": "Those That Were Lost",
+        "studio_code": "C",
+        "category": "Junior Lyrical Duo/Trio",
+        "approx_time": "1:14 PM"
+    },
+    {
+        "entry_id": "96",
+        "routine_title": "Where The Light Gets In",
+        "studio_code": "S",
+        "category": "Junior Contemporary Group",
+        "approx_time": "1:17 PM"
+    },
+    {
+        "entry_id": "97",
+        "routine_title": "Let It Be",
+        "studio_code": "M2",
+        "category": "Junior Contemporary Group",
+        "approx_time": "1:21 PM"
+    },
+    {
+        "entry_id": "98",
+        "routine_title": "Lack of Color",
+        "studio_code": "E",
+        "category": "Junior Contemporary Group",
+        "approx_time": "1:24 PM"
+    },
+    {
+        "entry_id": "99",
+        "routine_title": "White Blank Page",
+        "studio_code": "Q",
+        "category": "Junior Contemporary Group",
+        "approx_time": "1:27 PM"
+    },
+    {
+        "entry_id": "100",
+        "routine_title": "Wrong",
+        "studio_code": "A",
+        "category": "Junior Contemporary Group",
+        "approx_time": "1:31 PM"
+    },
+    {
+        "entry_id": "101",
+        "routine_title": "Where the Time Goes",
+        "studio_code": "E",
+        "category": "Junior Contemporary Group",
+        "approx_time": "1:34 PM"
+    },
+    {
+        "entry_id": "102",
+        "routine_title": "Garden Song",
+        "studio_code": "S",
+        "category": "Junior Lyrical Duo/Trio",
+        "approx_time": "1:37 PM"
+    },
+    {
+        "entry_id": "103",
+        "routine_title": "As Long As You Love Me",
+        "studio_code": "C",
+        "category": "Junior Lyrical Duo/Trio",
+        "approx_time": "1:40 PM"
+    },
+    {
+        "entry_id": "104",
+        "routine_title": "La Valse De L'amour",
+        "studio_code": "L",
+        "category": "Junior Ballet Line",
+        "approx_time": "1:43 PM"
+    },
+    {
+        "entry_id": "105",
+        "routine_title": "Divertissement: Chocolate",
+        "studio_code": "H2",
+        "category": "Junior Ballet Group",
+        "approx_time": "1:47 PM"
+    },
+    {
+        "entry_id": "106",
+        "routine_title": "A Quiet Life",
+        "studio_code": "S",
+        "category": "Junior Lyrical Group",
+        "approx_time": "1:50 PM"
+    },
+    {
+        "entry_id": "107",
+        "routine_title": "Forever Young",
+        "studio_code": "E",
+        "category": "Junior Lyrical Small Production",
+        "approx_time": "1:53 PM"
+    },
+    {
+        "entry_id": "108",
+        "routine_title": "Resolution",
+        "studio_code": "L",
+        "category": "Junior Lyrical Small Production",
+        "approx_time": "1:59 PM"
+    },
+    {
+        "entry_id": "109",
+        "routine_title": "Bugle Boy",
+        "studio_code": "M2",
+        "category": "Junior Tap Duo/Trio",
+        "approx_time": "2:04 PM"
+    },
+    {
+        "entry_id": "110",
+        "routine_title": "Mmmbop",
+        "studio_code": "H2",
+        "category": "Junior Tap Group",
+        "approx_time": "2:07 PM"
+    },
+    {
+        "entry_id": "111",
+        "routine_title": "Geronimo",
+        "studio_code": "E",
+        "category": "Junior Tap Small Production",
+        "approx_time": "2:10 PM"
+    },
+    {
+        "entry_id": "112",
+        "routine_title": "Someone In The Crowd",
+        "studio_code": "L",
+        "category": "Junior Tap Small Production",
+        "approx_time": "2:16 PM"
+    },
+    {
+        "entry_id": "113",
+        "routine_title": "Bad Girl",
+        "studio_code": "A",
+        "category": "Junior Tap Group",
+        "approx_time": "2:21 PM"
+    },
+    {
+        "entry_id": "114",
+        "routine_title": "Body Memory",
+        "studio_code": "E2",
+        "category": "Junior Contemporary Duo/Trio",
+        "approx_time": "2:24 PM"
+    },
+    {
+        "entry_id": "115",
+        "routine_title": "Never Change",
+        "studio_code": "Q",
+        "category": "Junior Contemporary Duo/Trio",
+        "approx_time": "2:27 PM"
+    },
+    {
+        "entry_id": "116",
+        "routine_title": "Before My Time",
+        "studio_code": "Q",
+        "category": "Junior Contemporary Duo/Trio",
+        "approx_time": "2:30 PM"
+    },
+    {
+        "entry_id": "117",
+        "routine_title": "Can't You See",
+        "studio_code": "E",
+        "category": "Junior Contemporary Duo/Trio",
+        "approx_time": "2:33 PM"
+    },
+    {
+        "entry_id": "118",
+        "routine_title": "Ventura Highway",
+        "studio_code": "S",
+        "category": "Junior Contemporary Line",
+        "approx_time": "2:36 PM"
+    },
+    {
+        "entry_id": "119",
+        "routine_title": "Rollercoaster",
+        "studio_code": "E",
+        "category": "Junior Contemporary Line",
+        "approx_time": "2:40 PM"
+    },
+    {
+        "entry_id": "120",
+        "routine_title": "I'm A Lady",
+        "studio_code": "12",
+        "category": "Junior Jazz Duo/Trio",
+        "approx_time": "2:43 PM"
+    },
+    {
+        "entry_id": "121",
+        "routine_title": "Charleston Boogie",
+        "studio_code": "J",
+        "category": "Junior Jazz Duo/Trio",
+        "approx_time": "2:46 PM"
+    },
+    {
+        "entry_id": "122",
+        "routine_title": "Everybody Wants To Be A Cat",
+        "studio_code": "L",
+        "category": "Junior Jazz Duo/Trio",
+        "approx_time": "2:49 PM"
+    },
+    {
+        "entry_id": "123",
+        "routine_title": "Dem Beats",
+        "studio_code": "N",
+        "category": "Junior Jazz Duo/Trio",
+        "approx_time": "2:52 PM"
+    },
+    {
+        "entry_id": "124",
+        "routine_title": "I Do What I Love",
+        "studio_code": "P",
+        "category": "Junior Jazz Duo/Trio",
+        "approx_time": "2:55 PM"
+    },
+    {
+        "entry_id": "125",
+        "routine_title": "Taka",
+        "studio_code": "E",
+        "category": "Junior Open Large Production",
+        "approx_time": "2:58 PM"
+    },
+    {
+        "entry_id": "126",
+        "routine_title": "Omote",
+        "studio_code": "S",
+        "category": "Junior Jazz Line",
+        "approx_time": "3:04 PM"
+    },
+    {
+        "entry_id": "127",
+        "routine_title": "River Deep",
+        "studio_code": "K",
+        "category": "Junior Jazz Line",
+        "approx_time": "3:08 PM"
+    },
+    {
+        "entry_id": "128",
+        "routine_title": "Fly On The Wall",
+        "studio_code": "Q",
+        "category": "Junior Jazz Line",
+        "approx_time": "3:11 PM"
+    },
+    {
+        "entry_id": "129",
+        "routine_title": "The Chain",
+        "studio_code": "L",
+        "category": "Junior Jazz Line",
+        "approx_time": "3:14 PM"
+    },
+    {
+        "entry_id": "130",
+        "routine_title": "What You Waiting For",
+        "studio_code": "M2",
+        "category": "Junior Jazz Line",
+        "approx_time": "3:18 PM"
+    },
+    {
+        "entry_id": "131",
+        "routine_title": "King",
+        "studio_code": "S",
+        "category": "Junior Hip-Hop Line",
+        "approx_time": "3:21 PM"
+    },
+    {
+        "entry_id": "132",
+        "routine_title": "KA-POW",
+        "studio_code": "E",
+        "category": "Junior Jazz Small Production",
+        "approx_time": "3:24 PM"
+    },
+    {
+        "entry_id": "133",
+        "routine_title": "Hamilton",
+        "studio_code": "H2",
+        "category": "Teen Musical Theatre Small Production",
+        "approx_time": "4:00 PM"
+    },
+    {
+        "entry_id": "134",
+        "routine_title": "Heaven On Their Minds",
+        "studio_code": "L",
+        "category": "Senior Musical Theatre Small Production",
+        "approx_time": "4:05 PM"
+    },
+    {
+        "entry_id": "135",
+        "routine_title": "My Discarded Men",
+        "studio_code": "W",
+        "category": "Teen Musical Theatre Group",
+        "approx_time": "4:10 PM"
+    },
+    {
+        "entry_id": "136",
+        "routine_title": "Left A Little Girl",
+        "studio_code": "E",
+        "category": "Teen Open Group",
+        "approx_time": "4:14 PM"
+    },
+    {
+        "entry_id": "137",
+        "routine_title": "Stay",
+        "studio_code": "A",
+        "category": "Teen Open Group",
+        "approx_time": "4:17 PM"
+    },
+    {
+        "entry_id": "139",
+        "routine_title": "Dancing Queen",
+        "studio_code": "H2",
+        "category": "Teen Open Group",
+        "approx_time": "4:20 PM"
+    },
+    {
+        "entry_id": "140",
+        "routine_title": "We Know What You Whisper",
+        "studio_code": "F2",
+        "category": "Teen Open Group",
+        "approx_time": "4:24 PM"
+    },
+    {
+        "entry_id": "141",
+        "routine_title": "A Musical",
+        "studio_code": "L",
+        "category": "Teen Musical Theatre Extended Line",
+        "approx_time": "4:27 PM"
+    },
+    {
+        "entry_id": "142",
+        "routine_title": "Journey",
+        "studio_code": "E",
+        "category": "Teen Contemporary Duo/Trio",
+        "approx_time": "4:31 PM"
+    },
+    {
+        "entry_id": "143",
+        "routine_title": "Everyone But Me And You",
+        "studio_code": "S",
+        "category": "Teen Contemporary Duo/Trio",
+        "approx_time": "4:34 PM"
+    },
+    {
+        "entry_id": "144",
+        "routine_title": "Any Kind",
+        "studio_code": "H2",
+        "category": "Teen Contemporary Duo/Trio",
+        "approx_time": "4:37 PM"
+    },
+    {
+        "entry_id": "145",
+        "routine_title": "Wait",
+        "studio_code": "W",
+        "category": "Teen Contemporary Duo/Trio",
+        "approx_time": "4:40 PM"
+    },
+    {
+        "entry_id": "145A",
+        "routine_title": "You are my sister",
+        "studio_code": "P",
+        "category": "Teen Contemporary Duo/Trio",
+        "approx_time": "4:43 PM"
+    },
+    {
+        "entry_id": "146",
+        "routine_title": "Werewolf",
+        "studio_code": "E",
+        "category": "Teen Contemporary Duo/Trio",
+        "approx_time": "4:46 PM"
+    },
+    {
+        "entry_id": "147",
+        "routine_title": "Light",
+        "studio_code": "H2",
+        "category": "Teen Contemporary Duo/Trio",
+        "approx_time": "4:49 PM"
+    },
+    {
+        "entry_id": "148",
+        "routine_title": "Lost",
+        "studio_code": "F2",
+        "category": "Teen Contemporary Duo/Trio",
+        "approx_time": "4:52 PM"
+    },
+    {
+        "entry_id": "149",
+        "routine_title": "The Chain",
+        "studio_code": "M2",
+        "category": "Teen Contemporary Duo/Trio",
+        "approx_time": "4:55 PM"
+    },
+    {
+        "entry_id": "150",
+        "routine_title": "Someone Left The Cake Out",
+        "studio_code": "E",
+        "category": "Teen Open Extended Line",
+        "approx_time": "4:58 PM"
+    },
+    {
+        "entry_id": "151",
+        "routine_title": "The Scientist",
+        "studio_code": "H2",
+        "category": "Teen Open Extended Line",
+        "approx_time": "5:03 PM"
+    },
+    {
+        "entry_id": "152",
+        "routine_title": "The Chain",
+        "studio_code": "S",
+        "category": "Senior Contemporary Duo/Trio",
+        "approx_time": "5:07 PM"
+    },
+    {
+        "entry_id": "153",
+        "routine_title": "Grow As We Go",
+        "studio_code": "D",
+        "category": "Senior Contemporary Duo/Trio",
+        "approx_time": "5:10 PM"
+    },
+    {
+        "entry_id": "153A",
+        "routine_title": "Turning Tables",
+        "studio_code": "12",
+        "category": "Senior Contemporary Duo/Trio",
+        "approx_time": "5:13 PM"
+    },
+    {
+        "entry_id": "156",
+        "routine_title": "Nemesis",
+        "studio_code": "E",
+        "category": "Senior Contemporary Small Production",
+        "approx_time": "5:16 PM"
+    },
+    {
+        "entry_id": "157",
+        "routine_title": "Rhythm of Life",
+        "studio_code": "S",
+        "category": "Senior Musical Theatre Line",
+        "approx_time": "5:21 PM"
+    },
+    {
+        "entry_id": "158",
+        "routine_title": "Spoiler Alert",
+        "studio_code": "M",
+        "category": "Teen Musical Theatre Line",
+        "approx_time": "5:25 PM"
+    },
+    {
+        "entry_id": "159",
+        "routine_title": "Chess",
+        "studio_code": "H2",
+        "category": "Teen Musical Theatre Line",
+        "approx_time": "5:28 PM"
+    },
+    {
+        "entry_id": "160",
+        "routine_title": "Live In Living Color",
+        "studio_code": "L",
+        "category": "Senior Musical Theatre Duo/Trio",
+        "approx_time": "5:31 PM"
+    },
+    {
+        "entry_id": "161",
+        "routine_title": "The Moment I Said It",
+        "studio_code": "E",
+        "category": "Teen Open Large Production",
+        "approx_time": "5:34 PM"
+    },
+    {
+        "entry_id": "162",
+        "routine_title": "Seaside",
+        "studio_code": "C",
+        "category": "Teen Lyrical Duo/Trio",
+        "approx_time": "5:41 PM"
+    },
+    {
+        "entry_id": "163",
+        "routine_title": "Skyfall",
+        "studio_code": "L",
+        "category": "Teen Lyrical Duo/Trio",
+        "approx_time": "5:44 PM"
+    },
+    {
+        "entry_id": "164",
+        "routine_title": "We Move As One",
+        "studio_code": "P",
+        "category": "Teen Lyrical Duo/Trio",
+        "approx_time": "5:47 PM"
+    },
+    {
+        "entry_id": "165",
+        "routine_title": "The Future",
+        "studio_code": "H2",
+        "category": "Teen Open Large Production",
+        "approx_time": "5:50 PM"
+    },
+    {
+        "entry_id": "166",
+        "routine_title": "Restless",
+        "studio_code": "S",
+        "category": "Senior Contemporary Line",
+        "approx_time": "5:56 PM"
+    },
+    {
+        "entry_id": "167",
+        "routine_title": "Age of Man",
+        "studio_code": "E",
+        "category": "Teen Contemporary Line",
+        "approx_time": "5:59 PM"
+    },
+    {
+        "entry_id": "168",
+        "routine_title": "Into Dust",
+        "studio_code": "L",
+        "category": "Senior Contemporary Line",
+        "approx_time": "6:03 PM"
+    },
+    {
+        "entry_id": "169",
+        "routine_title": "Cosmia",
+        "studio_code": "E",
+        "category": "Senior Contemporary Line",
+        "approx_time": "6:06 PM"
+    },
+    {
+        "entry_id": "170",
+        "routine_title": "I'd Rather Be Me",
+        "studio_code": "M",
+        "category": "Teen Open Duo/Trio",
+        "approx_time": "6:09 PM"
+    },
+    {
+        "entry_id": "172",
+        "routine_title": "Run",
+        "studio_code": "H2",
+        "category": "Teen Open Duo/Trio",
+        "approx_time": "6:12 PM"
+    },
+    {
+        "entry_id": "173",
+        "routine_title": "When We Scatter",
+        "studio_code": "G2",
+        "category": "Teen Open Duo/Trio",
+        "approx_time": "6:15 PM"
+    },
+    {
+        "entry_id": "174",
+        "routine_title": "Back To The Future",
+        "studio_code": "D",
+        "category": "Teen Tap Duo/Trio",
+        "approx_time": "6:18 PM"
+    },
+    {
+        "entry_id": "175",
+        "routine_title": "Cry Me A River",
+        "studio_code": "W",
+        "category": "Teen Tap Group",
+        "approx_time": "6:21 PM"
+    },
+    {
+        "entry_id": "176",
+        "routine_title": "Northern Attitude",
+        "studio_code": "A",
+        "category": "Teen Tap Group",
+        "approx_time": "6:25 PM"
+    },
+    {
+        "entry_id": "177",
+        "routine_title": "Down To The River To Pray",
+        "studio_code": "L",
+        "category": "Senior Lyrical Duo/Trio",
+        "approx_time": "6:28 PM"
+    },
+    {
+        "entry_id": "177A",
+        "routine_title": "We're at the end of the line",
+        "studio_code": "P",
+        "category": "Senior Lyrical Duo/Trio",
+        "approx_time": "6:31 PM"
+    },
+    {
+        "entry_id": "178",
+        "routine_title": "Come Sail Away",
+        "studio_code": "E",
+        "category": "Teen Open Small Production",
+        "approx_time": "6:34 PM"
+    },
+    {
+        "entry_id": "179",
+        "routine_title": "On The Edge Of",
+        "studio_code": "C",
+        "category": "Teen Open Small Production",
+        "approx_time": "6:39 PM"
+    },
+    {
+        "entry_id": "180",
+        "routine_title": "Only You",
+        "studio_code": "H2",
+        "category": "Teen Open Small Production",
+        "approx_time": "6:45 PM"
+    },
+    {
+        "entry_id": "181",
+        "routine_title": "Band On The Run",
+        "studio_code": "W",
+        "category": "Teen Tap Line",
+        "approx_time": "6:50 PM"
+    },
+    {
+        "entry_id": "182",
+        "routine_title": "Low Rider",
+        "studio_code": "M2",
+        "category": "Teen Tap Line",
+        "approx_time": "6:53 PM"
+    },
+    {
+        "entry_id": "183",
+        "routine_title": "Rolling in the Deep",
+        "studio_code": "E",
+        "category": "Senior Tap Line",
+        "approx_time": "6:57 PM"
+    },
+    {
+        "entry_id": "184",
+        "routine_title": "What Happens",
+        "studio_code": "S",
+        "category": "Senior Lyrical Group",
+        "approx_time": "7:00 PM"
+    },
+    {
+        "entry_id": "185",
+        "routine_title": "3 Preludes li",
+        "studio_code": "L",
+        "category": "Senior Lyrical Group",
+        "approx_time": "7:03 PM"
+    },
+    {
+        "entry_id": "186",
+        "routine_title": "Uncovered",
+        "studio_code": "R",
+        "category": "Teen Ballet Duo/Trio",
+        "approx_time": "7:07 PM"
+    },
+    {
+        "entry_id": "186A",
+        "routine_title": "Decades",
+        "studio_code": "A",
+        "category": "Teen Jazz Large Production",
+        "approx_time": "7:25 PM"
+    },
+    {
+        "entry_id": "187",
+        "routine_title": "Opening",
+        "studio_code": "H2",
+        "category": "Teen Ballet Group",
+        "approx_time": "7:31 PM"
+    },
+    {
+        "entry_id": "188",
+        "routine_title": "The Crack Of Doom",
+        "studio_code": "S",
+        "category": "Teen Contemporary Small Production",
+        "approx_time": "7:34 PM"
+    },
+    {
+        "entry_id": "189",
+        "routine_title": "Mother Don't Worry",
+        "studio_code": "E",
+        "category": "Senior Open Duo/Trio",
+        "approx_time": "7:40 PM"
+    },
+    {
+        "entry_id": "190",
+        "routine_title": "Don't Take All Night",
+        "studio_code": "E",
+        "category": "Senior Open Duo/Trio",
+        "approx_time": "7:43 PM"
+    },
+    {
+        "entry_id": "191",
+        "routine_title": "Coconut",
+        "studio_code": "M2",
+        "category": "Senior Open Duo/Trio",
+        "approx_time": "7:46 PM"
+    },
+    {
+        "entry_id": "192",
+        "routine_title": "Neon Moon",
+        "studio_code": "E",
+        "category": "Teen Open Line",
+        "approx_time": "7:49 PM"
+    },
+    {
+        "entry_id": "193",
+        "routine_title": "Flicker",
+        "studio_code": "H2",
+        "category": "Teen Ballet Extended Line",
+        "approx_time": "7:52 PM"
+    },
+    {
+        "entry_id": "194",
+        "routine_title": "My Baby",
+        "studio_code": "E",
+        "category": "Senior Contemporary Extended Group",
+        "approx_time": "7:56 PM"
+    },
+    {
+        "entry_id": "195",
+        "routine_title": "Waiting",
+        "studio_code": "S",
+        "category": "Senior Contemporary Group",
+        "approx_time": "8:01 PM"
+    },
+    {
+        "entry_id": "196",
+        "routine_title": "Carlos Song",
+        "studio_code": "W",
+        "category": "Teen Contemporary Group",
+        "approx_time": "8:04 PM"
+    },
+    {
+        "entry_id": "197",
+        "routine_title": "I Know All What I Do",
+        "studio_code": "C",
+        "category": "Senior Contemporary Group",
+        "approx_time": "8:07 PM"
+    },
+    {
+        "entry_id": "198",
+        "routine_title": "Through the Valley",
+        "studio_code": "E",
+        "category": "Teen Open Line",
+        "approx_time": "8:11 PM"
+    },
+    {
+        "entry_id": "199",
+        "routine_title": "No",
+        "studio_code": "A",
+        "category": "Teen Open Line",
+        "approx_time": "8:14 PM"
+    },
+    {
+        "entry_id": "200",
+        "routine_title": "A Kind of Case",
+        "studio_code": "E",
+        "category": "Senior Open Extended Line",
+        "approx_time": "8:17 PM"
+    },
+    {
+        "entry_id": "201",
+        "routine_title": "Assumptions",
+        "studio_code": "L",
+        "category": "Senior Open Extended Line",
+        "approx_time": "8:22 PM"
+    },
+    {
+        "entry_id": "202",
+        "routine_title": "Vienna",
+        "studio_code": "H2",
+        "category": "Teen Contemporary Extended Group",
+        "approx_time": "8:26 PM"
+    },
+    {
+        "entry_id": "203",
+        "routine_title": "You Gotta Be",
+        "studio_code": "L",
+        "category": "Teen Contemporary Group",
+        "approx_time": "8:30 PM"
+    },
+    {
+        "entry_id": "204",
+        "routine_title": "Tear Down the House",
+        "studio_code": "S",
+        "category": "Teen Contemporary Group",
+        "approx_time": "8:34 PM"
+    },
+    {
+        "entry_id": "205",
+        "routine_title": "Heart Of Glass",
+        "studio_code": "H2",
+        "category": "Teen Contemporary Group",
+        "approx_time": "8:37 PM"
+    },
+    {
+        "entry_id": "206",
+        "routine_title": "The Seance",
+        "studio_code": "E",
+        "category": "Teen Contemporary Group",
+        "approx_time": "8:40 PM"
+    },
+    {
+        "entry_id": "207",
+        "routine_title": "My Guitar Gently Weeps",
+        "studio_code": "W",
+        "category": "Teen Contemporary Group",
+        "approx_time": "8:44 PM"
+    },
+    {
+        "entry_id": "208",
+        "routine_title": "I Might Just Ask",
+        "studio_code": "A",
+        "category": "Teen Contemporary Group",
+        "approx_time": "8:47 PM"
+    },
+    {
+        "entry_id": "209",
+        "routine_title": "Isn't She Lovely",
+        "studio_code": "H2",
+        "category": "Teen Tap Small Production",
+        "approx_time": "8:50 PM"
+    },
+    {
+        "entry_id": "210",
+        "routine_title": "Maybe",
+        "studio_code": "S",
+        "category": "Teen Lyrical Group",
+        "approx_time": "8:56 PM"
+    },
+    {
+        "entry_id": "211",
+        "routine_title": "Go Put Your Records On",
+        "studio_code": "L",
+        "category": "Teen Lyrical Group",
+        "approx_time": "8:59 PM"
+    },
+    {
+        "entry_id": "212",
+        "routine_title": "My All",
+        "studio_code": "A",
+        "category": "Teen Lyrical Group",
+        "approx_time": "9:02 PM"
+    },
+    {
+        "entry_id": "213",
+        "routine_title": "Lover Please Stay",
+        "studio_code": "F2",
+        "category": "Teen Lyrical Group",
+        "approx_time": "9:06 PM"
+    },
+    {
+        "entry_id": "214",
+        "routine_title": "Babooshka",
+        "studio_code": "S",
+        "category": "Senior Open Group",
+        "approx_time": "9:09 PM"
+    },
+    {
+        "entry_id": "215",
+        "routine_title": "All the Things I've Done",
+        "studio_code": "E",
+        "category": "Senior Open Group",
+        "approx_time": "9:12 PM"
+    },
+    {
+        "entry_id": "215A",
+        "routine_title": "Hey Rhythm",
+        "studio_code": "C",
+        "category": "Teen Open Group",
+        "approx_time": "9:16 PM"
+    },
+    {
+        "entry_id": "217",
+        "routine_title": "Why Do We Run",
+        "studio_code": "A",
+        "category": "Teen Jazz Group",
+        "approx_time": "9:19 PM"
+    },
+    {
+        "entry_id": "218",
+        "routine_title": "Just Keep Watching",
+        "studio_code": "F2",
+        "category": "Teen Jazz Group",
+        "approx_time": "9:22 PM"
+    },
+    {
+        "entry_id": "219",
+        "routine_title": "Bones",
+        "studio_code": "M2",
+        "category": "Teen Jazz Group",
+        "approx_time": "9:26 PM"
+    },
+    {
+        "entry_id": "220",
+        "routine_title": "Standing There",
+        "studio_code": "E",
+        "category": "Teen Jazz Small Production",
+        "approx_time": "9:29 PM"
+    },
+    {
+        "entry_id": "221",
+        "routine_title": "Hello",
+        "studio_code": "S",
+        "category": "Teen Jazz Line",
+        "approx_time": "9:34 PM"
+    },
+    {
+        "entry_id": "222",
+        "routine_title": "Big Noise",
+        "studio_code": "M",
+        "category": "Teen Jazz Line",
+        "approx_time": "9:38 PM"
+    },
+    {
+        "entry_id": "223",
+        "routine_title": "Like Jennie",
+        "studio_code": "L",
+        "category": "Teen Jazz Line",
+        "approx_time": "9:41 PM"
+    },
+    {
+        "entry_id": "224",
+        "routine_title": "Hiphip Chinchin",
+        "studio_code": "A",
+        "category": "Teen Jazz Line",
+        "approx_time": "9:44 PM"
+    },
+    {
+        "entry_id": "226",
+        "routine_title": "Boogie Oogie",
+        "studio_code": "M2",
+        "category": "Teen Jazz Duo/Trio",
+        "approx_time": "9:48 PM"
+    },
+    {
+        "entry_id": "227",
+        "routine_title": "Running Up That Hill",
+        "studio_code": "L",
+        "category": "Senior Jazz Group",
+        "approx_time": "9:51 PM"
+    },
+    {
+        "entry_id": "228",
+        "routine_title": "Golden Years",
+        "studio_code": "W",
+        "category": "Teen Jazz Line",
+        "approx_time": "9:54 PM"
+    },
+    {
+        "entry_id": "229",
+        "routine_title": "Cadence",
+        "studio_code": "E",
+        "category": "Senior Jazz Line",
+        "approx_time": "9:57 PM"
+    },
+    {
+        "entry_id": "230",
+        "routine_title": "I Like It Like That",
+        "studio_code": "L",
+        "category": "Teen Hip-Hop Duo/Trio",
+        "approx_time": "10:01 PM"
+    },
+    {
+        "entry_id": "231",
+        "routine_title": "Turn The Tv Off",
+        "studio_code": "F2",
+        "category": "Teen Hip-Hop Group",
+        "approx_time": "10:04 PM"
+    },
+    {
+        "entry_id": "232",
+        "routine_title": "Low",
+        "studio_code": "M2",
+        "category": "Teen Hip-Hop Group",
+        "approx_time": "10:07 PM"
+    },
+    {
+        "entry_id": "233",
+        "routine_title": "Crazy",
+        "studio_code": "S",
+        "category": "Senior Hip-Hop Group",
+        "approx_time": "10:10 PM"
+    },
+    {
+        "entry_id": "234",
+        "routine_title": "The Code",
+        "studio_code": "E",
+        "category": "Senior Jazz Small Production",
+        "approx_time": "10:14 PM"
+    },
+    {
+        "entry_id": "236",
+        "routine_title": "What's Cookin'",
+        "studio_code": "L",
+        "category": "Mini Musical Theatre Small Production",
+        "approx_time": "7:00 AM"
+    },
+    {
+        "entry_id": "237",
+        "routine_title": "You've Got To Pick A Pocket Or Two",
+        "studio_code": "S",
+        "category": "Mini Musical Theatre Line",
+        "approx_time": "7:05 AM"
+    },
+    {
+        "entry_id": "238",
+        "routine_title": "Diga Diga Doo",
+        "studio_code": "W",
+        "category": "Mini Musical Theatre Group",
+        "approx_time": "7:08 AM"
+    },
+    {
+        "entry_id": "239",
+        "routine_title": "Queen Of Your Dreams",
+        "studio_code": "A",
+        "category": "Mini Musical Theatre Solo",
+        "approx_time": "7:12 AM"
+    },
+    {
+        "entry_id": "240",
+        "routine_title": "Hot Honey Rag",
+        "studio_code": "L",
+        "category": "Mini Musical Theatre Duo/Trio",
+        "approx_time": "7:15 AM"
+    },
+    {
+        "entry_id": "241",
+        "routine_title": "Always on my Mind",
+        "studio_code": "E",
+        "category": "Mini Open Duo/Trio",
+        "approx_time": "7:18 AM"
+    },
+    {
+        "entry_id": "242",
+        "routine_title": "Eclipse Of The Heart",
+        "studio_code": "A",
+        "category": "Mini Open Duo/Trio",
+        "approx_time": "7:21 AM"
+    },
+    {
+        "entry_id": "243",
+        "routine_title": "Push, Pull, Release",
+        "studio_code": "12",
+        "category": "Mini Open Duo/Trio",
+        "approx_time": "7:24 AM"
+    },
+    {
+        "entry_id": "244",
+        "routine_title": "Trouble",
+        "studio_code": "Z",
+        "category": "Mini Musical Theatre Solo",
+        "approx_time": "7:27 AM"
+    },
+    {
+        "entry_id": "245",
+        "routine_title": "American Beauty Rose",
+        "studio_code": "W",
+        "category": "Mini Musical Theatre Group",
+        "approx_time": "7:30 AM"
+    },
+    {
+        "entry_id": "246",
+        "routine_title": "Zazz",
+        "studio_code": "A",
+        "category": "Mini Musical Theatre Solo",
+        "approx_time": "7:33 AM"
+    },
+    {
+        "entry_id": "247",
+        "routine_title": "Spanish Rose",
+        "studio_code": "W",
+        "category": "Mini Musical Theatre Solo",
+        "approx_time": "7:36 AM"
+    },
+    {
+        "entry_id": "248",
+        "routine_title": "Welcome To The 60'S",
+        "studio_code": "L",
+        "category": "Mini Musical Theatre Group",
+        "approx_time": "7:39 AM"
+    },
+    {
+        "entry_id": "249",
+        "routine_title": "Everything Must Change",
+        "studio_code": "A",
+        "category": "Mini Contemporary Solo",
+        "approx_time": "7:43 AM"
+    },
+    {
+        "entry_id": "250",
+        "routine_title": "Too Darn Hot",
+        "studio_code": "W",
+        "category": "Mini Musical Theatre Solo",
+        "approx_time": "7:46 AM"
+    },
+    {
+        "entry_id": "251",
+        "routine_title": "So What",
+        "studio_code": "M",
+        "category": "Mini Open Solo",
+        "approx_time": "7:49 AM"
+    },
+    {
+        "entry_id": "252",
+        "routine_title": "Perseverance",
+        "studio_code": "E",
+        "category": "Mini Open Solo",
+        "approx_time": "7:52 AM"
+    },
+    {
+        "entry_id": "253",
+        "routine_title": "Hold On Me",
+        "studio_code": "E",
+        "category": "Mini Open Solo",
+        "approx_time": "7:55 AM"
+    },
+    {
+        "entry_id": "254",
+        "routine_title": "Supercut",
+        "studio_code": "A",
+        "category": "Mini Open Line",
+        "approx_time": "7:58 AM"
+    },
+    {
+        "entry_id": "255",
+        "routine_title": "La Vie En Rose",
+        "studio_code": "E",
+        "category": "Mini Open Line",
+        "approx_time": "8:01 AM"
+    },
+    {
+        "entry_id": "256",
+        "routine_title": "I'm A Survivor",
+        "studio_code": "N",
+        "category": "Mini Open Solo",
+        "approx_time": "8:05 AM"
+    },
+    {
+        "entry_id": "257",
+        "routine_title": "Once Upon A Dream",
+        "studio_code": "F2",
+        "category": "Mini Open Solo",
+        "approx_time": "8:08 AM"
+    },
+    {
+        "entry_id": "258",
+        "routine_title": "Under Opal Skies",
+        "studio_code": "G2",
+        "category": "Mini Open Solo",
+        "approx_time": "8:11 AM"
+    },
+    {
+        "entry_id": "259",
+        "routine_title": "Better",
+        "studio_code": "R",
+        "category": "Mini Specialty Solo",
+        "approx_time": "8:14 AM"
+    },
+    {
+        "entry_id": "260",
+        "routine_title": "Little Me",
+        "studio_code": "V",
+        "category": "Mini Specialty Solo",
+        "approx_time": "8:17 AM"
+    },
+    {
+        "entry_id": "261",
+        "routine_title": "Doll Of The Dusk",
+        "studio_code": "R",
+        "category": "Mini Specialty Solo",
+        "approx_time": "8:20 AM"
+    },
+    {
+        "entry_id": "262",
+        "routine_title": "Cuban Pete",
+        "studio_code": "C",
+        "category": "Mini Specialty Duo/Trio",
+        "approx_time": "8:23 AM"
+    },
+    {
+        "entry_id": "263",
+        "routine_title": "The Light That Never Fails",
+        "studio_code": "S",
+        "category": "Mini Lyrical Duo/Trio",
+        "approx_time": "8:26 AM"
+    },
+    {
+        "entry_id": "264",
+        "routine_title": "Run",
+        "studio_code": "C",
+        "category": "Mini Lyrical Duo/Trio",
+        "approx_time": "8:29 AM"
+    },
+    {
+        "entry_id": "264A",
+        "routine_title": "The Light That Never Fails",
+        "studio_code": "K2",
+        "category": "Mini Lyrical Duo/Trio",
+        "approx_time": "8:32 AM"
+    },
+    {
+        "entry_id": "265",
+        "routine_title": "Shallow",
+        "studio_code": "F2",
+        "category": "Mini Lyrical Duo/Trio",
+        "approx_time": "8:35 AM"
+    },
+    {
+        "entry_id": "266",
+        "routine_title": "Lost Without You",
+        "studio_code": "K",
+        "category": "Mini Lyrical Duo/Trio",
+        "approx_time": "8:38 AM"
+    },
+    {
+        "entry_id": "267",
+        "routine_title": "Can We Still Be Friends",
+        "studio_code": "C",
+        "category": "Mini Lyrical Duo/Trio",
+        "approx_time": "8:41 AM"
+    },
+    {
+        "entry_id": "268",
+        "routine_title": "Dreamboat",
+        "studio_code": "E",
+        "category": "Mini Open Group",
+        "approx_time": "8:44 AM"
+    },
+    {
+        "entry_id": "269",
+        "routine_title": "El Solo Torro",
+        "studio_code": "E",
+        "category": "Mini Open Group",
+        "approx_time": "8:47 AM"
+    },
+    {
+        "entry_id": "270",
+        "routine_title": "Nothing Can Change This Love",
+        "studio_code": "E",
+        "category": "Mini Contemporary Line",
+        "approx_time": "8:51 AM"
+    },
+    {
+        "entry_id": "271",
+        "routine_title": "Kindness of All Kinds",
+        "studio_code": "S",
+        "category": "Mini Lyrical Solo",
+        "approx_time": "8:54 AM"
+    },
+    {
+        "entry_id": "272",
+        "routine_title": "Forever Young",
+        "studio_code": "W",
+        "category": "Mini Lyrical Solo",
+        "approx_time": "8:57 AM"
+    },
+    {
+        "entry_id": "273",
+        "routine_title": "You Say",
+        "studio_code": "Z",
+        "category": "Mini Lyrical Solo",
+        "approx_time": "9:00 AM"
+    },
+    {
+        "entry_id": "275",
+        "routine_title": "Say Something",
+        "studio_code": "C",
+        "category": "Mini Lyrical Solo",
+        "approx_time": "9:03 AM"
+    },
+    {
+        "entry_id": "276",
+        "routine_title": "Still Breathing",
+        "studio_code": "N",
+        "category": "Mini Lyrical Solo",
+        "approx_time": "9:06 AM"
+    },
+    {
+        "entry_id": "277",
+        "routine_title": "Feeling Good",
+        "studio_code": "A",
+        "category": "Mini Jazz Solo",
+        "approx_time": "9:10 AM"
+    },
+    {
+        "entry_id": "278",
+        "routine_title": "Tornado",
+        "studio_code": "F2",
+        "category": "Mini Lyrical Solo",
+        "approx_time": "9:13 AM"
+    },
+    {
+        "entry_id": "279",
+        "routine_title": "Move Your Feet",
+        "studio_code": "E",
+        "category": "Mini Tap Line",
+        "approx_time": "9:16 AM"
+    },
+    {
+        "entry_id": "280",
+        "routine_title": "Moving On Up",
+        "studio_code": "E",
+        "category": "Mini Tap Small Production",
+        "approx_time": "9:19 AM"
+    },
+    {
+        "entry_id": "281",
+        "routine_title": "No Bad News",
+        "studio_code": "R",
+        "category": "Mini Tap Solo",
+        "approx_time": "9:24 AM"
+    },
+    {
+        "entry_id": "281A",
+        "routine_title": "MJ",
+        "studio_code": "K2",
+        "category": "Mini Tap Solo",
+        "approx_time": "9:27 AM"
+    },
+    {
+        "entry_id": "282",
+        "routine_title": "Rescue Me",
+        "studio_code": "G2",
+        "category": "Mini Tap Solo",
+        "approx_time": "9:31 AM"
+    },
+    {
+        "entry_id": "283",
+        "routine_title": "Wind It Up",
+        "studio_code": "S",
+        "category": "Mini Contemporary Solo",
+        "approx_time": "9:34 AM"
+    },
+    {
+        "entry_id": "284",
+        "routine_title": "The Sound of Silence",
+        "studio_code": "K",
+        "category": "Mini Contemporary Solo",
+        "approx_time": "9:37 AM"
+    },
+    {
+        "entry_id": "285",
+        "routine_title": "Crippled Bird",
+        "studio_code": "C",
+        "category": "Mini Contemporary Solo",
+        "approx_time": "9:40 AM"
+    },
+    {
+        "entry_id": "286",
+        "routine_title": "Sirens",
+        "studio_code": "R",
+        "category": "Mini Contemporary Solo",
+        "approx_time": "9:43 AM"
+    },
+    {
+        "entry_id": "287",
+        "routine_title": "Stand Inside",
+        "studio_code": "A",
+        "category": "Mini Contemporary Solo",
+        "approx_time": "9:46 AM"
+    },
+    {
+        "entry_id": "288",
+        "routine_title": "Cosmic Love",
+        "studio_code": "F2",
+        "category": "Mini Contemporary Solo",
+        "approx_time": "9:49 AM"
+    },
+    {
+        "entry_id": "289",
+        "routine_title": "Dream A Little Dream",
+        "studio_code": "G2",
+        "category": "Mini Contemporary Solo",
+        "approx_time": "9:52 AM"
+    },
+    {
+        "entry_id": "290",
+        "routine_title": "Love Train",
+        "studio_code": "A",
+        "category": "Mini Tap Group",
+        "approx_time": "9:55 AM"
+    },
+    {
+        "entry_id": "291",
+        "routine_title": "Miss Kiss",
+        "studio_code": "A",
+        "category": "Mini Tap Group",
+        "approx_time": "9:59 AM"
+    },
+    {
+        "entry_id": "291А",
+        "routine_title": "ТВА",
+        "studio_code": "Q2",
+        "category": "Mini TBA Solo",
+        "approx_time": "10:02 AM"
+    },
+    {
+        "entry_id": "292",
+        "routine_title": "Going Away Smiling",
+        "studio_code": "R",
+        "category": "Mini Contemporary Solo",
+        "approx_time": "10:05 AM"
+    },
+    {
+        "entry_id": "293",
+        "routine_title": "Extraordinary Magic",
+        "studio_code": "N2",
+        "category": "Mini Contemporary Solo",
+        "approx_time": "10:08 AM"
+    },
+    {
+        "entry_id": "294",
+        "routine_title": "My Days",
+        "studio_code": "Q",
+        "category": "Mini Contemporary Solo",
+        "approx_time": "10:11 AM"
+    },
+    {
+        "entry_id": "295",
+        "routine_title": "Moonlight Sanata",
+        "studio_code": "K",
+        "category": "Mini Contemporary Solo",
+        "approx_time": "10:14 AM"
+    },
+    {
+        "entry_id": "296",
+        "routine_title": "Heaven I Know",
+        "studio_code": "Q",
+        "category": "Mini Contemporary Solo",
+        "approx_time": "10:17 AM"
+    },
+    {
+        "entry_id": "297",
+        "routine_title": "Unspoken",
+        "studio_code": "A2",
+        "category": "Mini Contemporary Solo",
+        "approx_time": "10:20 AM"
+    },
+    {
+        "entry_id": "298",
+        "routine_title": "The Middle Of The World",
+        "studio_code": "Ο",
+        "category": "Mini Contemporary Solo",
+        "approx_time": "10:23 AM"
+    },
+    {
+        "entry_id": "299",
+        "routine_title": "Angels",
+        "studio_code": "L",
+        "category": "Mini Lyrical Group",
+        "approx_time": "10:27 AM"
+    },
+    {
+        "entry_id": "300",
+        "routine_title": "I Lived",
+        "studio_code": "A",
+        "category": "Mini Lyrical Group",
+        "approx_time": "10:30 AM"
+    },
+    {
+        "entry_id": "301",
+        "routine_title": "You Are The Reason",
+        "studio_code": "F2",
+        "category": "Mini Lyrical Group",
+        "approx_time": "10:33 AM"
+    },
+    {
+        "entry_id": "302",
+        "routine_title": "I Disappeared Below The Sea",
+        "studio_code": "G2",
+        "category": "Mini Contemporary Solo",
+        "approx_time": "10:37 AM"
+    },
+    {
+        "entry_id": "303",
+        "routine_title": "Human",
+        "studio_code": "Q",
+        "category": "Mini Contemporary Solo",
+        "approx_time": "10:40 AM"
+    },
+    {
+        "entry_id": "304",
+        "routine_title": "Running",
+        "studio_code": "F2",
+        "category": "Mini Contemporary Solo",
+        "approx_time": "10:43 AM"
+    },
+    {
+        "entry_id": "305",
+        "routine_title": "Time After Time",
+        "studio_code": "G2",
+        "category": "Mini Contemporary Solo",
+        "approx_time": "10:46 AM"
+    },
+    {
+        "entry_id": "306",
+        "routine_title": "Panic Room",
+        "studio_code": "12",
+        "category": "Mini Contemporary Solo",
+        "approx_time": "10:49 AM"
+    },
+    {
+        "entry_id": "307",
+        "routine_title": "Snowqueen Of Texas",
+        "studio_code": "S",
+        "category": "Mini Contemporary Group",
+        "approx_time": "10:52 AM"
+    },
+    {
+        "entry_id": "308",
+        "routine_title": "In My Life",
+        "studio_code": "E",
+        "category": "Mini Contemporary Group",
+        "approx_time": "10:55 AM"
+    },
+    {
+        "entry_id": "309",
+        "routine_title": "If I Had My Way",
+        "studio_code": "Q",
+        "category": "Mini Contemporary Group",
+        "approx_time": "10:59 AM"
+    },
+    {
+        "entry_id": "310",
+        "routine_title": "Runaround",
+        "studio_code": "A",
+        "category": "Mini Contemporary Group",
+        "approx_time": "11:02 AM"
+    },
+    {
+        "entry_id": "311",
+        "routine_title": "Sentimental",
+        "studio_code": "C",
+        "category": "Mini Lyrical Solo",
+        "approx_time": "11:05 AM"
+    },
+    {
+        "entry_id": "312",
+        "routine_title": "Kiss The Sky",
+        "studio_code": "N",
+        "category": "Mini Lyrical Solo",
+        "approx_time": "11:08 AM"
+    },
+    {
+        "entry_id": "313",
+        "routine_title": "Fly Before You Fall",
+        "studio_code": "A",
+        "category": "Mini Lyrical Solo",
+        "approx_time": "11:30 AM"
+    },
+    {
+        "entry_id": "314",
+        "routine_title": "Photograph",
+        "studio_code": "F2",
+        "category": "Mini Lyrical Solo",
+        "approx_time": "11:33 AM"
+    },
+    {
+        "entry_id": "315",
+        "routine_title": "Im Blue",
+        "studio_code": "C",
+        "category": "Mini Lyrical Solo",
+        "approx_time": "11:36 AM"
+    },
+    {
+        "entry_id": "316",
+        "routine_title": "You Say",
+        "studio_code": "12",
+        "category": "Mini Lyrical Solo",
+        "approx_time": "11:39 AM"
+    },
+    {
+        "entry_id": "317",
+        "routine_title": "Rainbow",
+        "studio_code": "A",
+        "category": "Mini Lyrical Solo",
+        "approx_time": "11:42 AM"
+    },
+    {
+        "entry_id": "318",
+        "routine_title": "Everytime",
+        "studio_code": "12",
+        "category": "Mini Lyrical Solo",
+        "approx_time": "11:45 AM"
+    },
+    {
+        "entry_id": "319",
+        "routine_title": "Sound Of The Sea",
+        "studio_code": "A",
+        "category": "Mini Contemporary Duo/Trio",
+        "approx_time": "11:48 AM"
+    },
+    {
+        "entry_id": "320",
+        "routine_title": "Finding Home",
+        "studio_code": "Q",
+        "category": "Mini Contemporary Duo/Trio",
+        "approx_time": "11:51 AM"
+    },
+    {
+        "entry_id": "321",
+        "routine_title": "In Joy",
+        "studio_code": "G2",
+        "category": "Mini Contemporary Duo/Trio",
+        "approx_time": "11:54 AM"
+    },
+    {
+        "entry_id": "322",
+        "routine_title": "Mr Monotony",
+        "studio_code": "A2",
+        "category": "Mini Jazz Solo",
+        "approx_time": "11:57 AM"
+    },
+    {
+        "entry_id": "323",
+        "routine_title": "Do My Thing",
+        "studio_code": "N",
+        "category": "Mini Open Solo",
+        "approx_time": "12:00 PM"
+    },
+    {
+        "entry_id": "324",
+        "routine_title": "Standing There",
+        "studio_code": "Q",
+        "category": "Mini Jazz Solo",
+        "approx_time": "12:03 PM"
+    },
+    {
+        "entry_id": "325",
+        "routine_title": "Fool 4 You",
+        "studio_code": "A",
+        "category": "Mini Jazz Solo",
+        "approx_time": "12:06 PM"
+    },
+    {
+        "entry_id": "326",
+        "routine_title": "Toy Soldier",
+        "studio_code": "Q",
+        "category": "Mini Jazz Solo",
+        "approx_time": "12:09 PM"
+    },
+    {
+        "entry_id": "327",
+        "routine_title": "That's Not My Name",
+        "studio_code": "S",
+        "category": "Mini Jazz Solo",
+        "approx_time": "12:12 PM"
+    },
+    {
+        "entry_id": "328",
+        "routine_title": "I Am The Best",
+        "studio_code": "N",
+        "category": "Mini Jazz Solo",
+        "approx_time": "12:16 PM"
+    },
+    {
+        "entry_id": "329",
+        "routine_title": "Reflection",
+        "studio_code": "K",
+        "category": "Mini Lyrical Solo",
+        "approx_time": "12:19 PM"
+    },
+    {
+        "entry_id": "330",
+        "routine_title": "Landslide",
+        "studio_code": "A2",
+        "category": "Mini Jazz Solo",
+        "approx_time": "12:22 PM"
+    },
+    {
+        "entry_id": "331",
+        "routine_title": "Work Me Down",
+        "studio_code": "C",
+        "category": "Mini Jazz Solo",
+        "approx_time": "12:25 PM"
+    },
+    {
+        "entry_id": "332",
+        "routine_title": "Made You Look",
+        "studio_code": "N",
+        "category": "Mini Jazz Solo",
+        "approx_time": "12:28 PM"
+    },
+    {
+        "entry_id": "333",
+        "routine_title": "Locomotion",
+        "studio_code": "A",
+        "category": "Mini Jazz Solo",
+        "approx_time": "12:31 PM"
+    },
+    {
+        "entry_id": "334",
+        "routine_title": "Americano",
+        "studio_code": "F2",
+        "category": "Mini Jazz Solo",
+        "approx_time": "12:34 PM"
+    },
+    {
+        "entry_id": "335",
+        "routine_title": "New Attitude",
+        "studio_code": "K",
+        "category": "Mini Jazz Solo",
+        "approx_time": "12:37 PM"
+    },
+    {
+        "entry_id": "336",
+        "routine_title": "Cold Hearted",
+        "studio_code": "S",
+        "category": "Mini Jazz Group",
+        "approx_time": "12:40 PM"
+    },
+    {
+        "entry_id": "337",
+        "routine_title": "Don't Go Breaking My Heart",
+        "studio_code": "E",
+        "category": "Mini Jazz Group",
+        "approx_time": "12:44 PM"
+    },
+    {
+        "entry_id": "338",
+        "routine_title": "Who Loves You",
+        "studio_code": "Q",
+        "category": "Mini Jazz Group",
+        "approx_time": "12:47 PM"
+    },
+    {
+        "entry_id": "339",
+        "routine_title": "Do You Love Me",
+        "studio_code": "A",
+        "category": "Mini Jazz Group",
+        "approx_time": "12:50 PM"
+    },
+    {
+        "entry_id": "340",
+        "routine_title": "Sweet Dreams",
+        "studio_code": "M2",
+        "category": "Mini Jazz Group",
+        "approx_time": "12:54 PM"
+    },
+    {
+        "entry_id": "341",
+        "routine_title": "Sos",
+        "studio_code": "A",
+        "category": "Mini Jazz Group",
+        "approx_time": "12:57 PM"
+    },
+    {
+        "entry_id": "342",
+        "routine_title": "Praise",
+        "studio_code": "F2",
+        "category": "Mini Jazz Group",
+        "approx_time": "1:00 PM"
+    },
+    {
+        "entry_id": "343",
+        "routine_title": "No Parking On The Dance Floor",
+        "studio_code": "W",
+        "category": "Mini Jazz Duo/Trio",
+        "approx_time": "1:04 PM"
+    },
+    {
+        "entry_id": "344",
+        "routine_title": "Million Dollas",
+        "studio_code": "Q",
+        "category": "Mini Jazz Duo/Trio",
+        "approx_time": "1:07 PM"
+    },
+    {
+        "entry_id": "345",
+        "routine_title": "Good Day",
+        "studio_code": "L",
+        "category": "Mini Jazz Duo/Trio",
+        "approx_time": "1:10 PM"
+    },
+    {
+        "entry_id": "346",
+        "routine_title": "Boogie Wonderland",
+        "studio_code": "N",
+        "category": "Mini Jazz Duo/Trio",
+        "approx_time": "1:13 PM"
+    },
+    {
+        "entry_id": "347",
+        "routine_title": "These Boots",
+        "studio_code": "Q",
+        "category": "Mini Jazz Duo/Trio",
+        "approx_time": "1:16 PM"
+    },
+    {
+        "entry_id": "348",
+        "routine_title": "We Got the Beat",
+        "studio_code": "M2",
+        "category": "Mini Jazz Line",
+        "approx_time": "1:19 PM"
+    },
+    {
+        "entry_id": "349",
+        "routine_title": "Tell Me",
+        "studio_code": "A",
+        "category": "Mini Jazz Line",
+        "approx_time": "1:22 PM"
+    },
+    {
+        "entry_id": "350",
+        "routine_title": "Outta Your Mind",
+        "studio_code": "S",
+        "category": "Mini Hip-Hop Group",
+        "approx_time": "1:25 PM"
+    },
+    {
+        "entry_id": "351",
+        "routine_title": "Too Easy",
+        "studio_code": "N",
+        "category": "Mini Hip-Hop Duo/Trio",
+        "approx_time": "1:29 PM"
+    },
+    {
+        "entry_id": "352",
+        "routine_title": "Fierce",
+        "studio_code": "M2",
+        "category": "Mini Hip-Hop Group",
+        "approx_time": "1:32 PM"
+    },
+    {
+        "entry_id": "353",
+        "routine_title": "A Little Less Conversation",
+        "studio_code": "Q",
+        "category": "Mini Jazz Small Production",
+        "approx_time": "1:35 PM"
+    },
+    {
+        "entry_id": "354",
+        "routine_title": "Work",
+        "studio_code": "A",
+        "category": "Mini Hip-Hop Small Production",
+        "approx_time": "1:40 PM"
+    },
+    {
+        "entry_id": "355",
+        "routine_title": "Pumps",
+        "studio_code": "M2",
+        "category": "Teen Musical Theatre Solo",
+        "approx_time": "3:05 PM"
+    },
+    {
+        "entry_id": "356",
+        "routine_title": "Rose's Turn",
+        "studio_code": "S",
+        "category": "Teen Musical Theatre Solo",
+        "approx_time": "3:08 PM"
+    },
+    {
+        "entry_id": "357",
+        "routine_title": "The Space Between the Pull",
+        "studio_code": "G2",
+        "category": "Teen Open Solo",
+        "approx_time": "3:11 PM"
+    },
+    {
+        "entry_id": "358",
+        "routine_title": "This Place Will Be Too Small",
+        "studio_code": "K",
+        "category": "Teen Open Solo",
+        "approx_time": "3:14 PM"
+    },
+    {
+        "entry_id": "359",
+        "routine_title": "Telexes",
+        "studio_code": "H2",
+        "category": "Teen Open Solo",
+        "approx_time": "3:17 PM"
+    },
+    {
+        "entry_id": "360",
+        "routine_title": "A Long Year",
+        "studio_code": "E",
+        "category": "Teen Open Solo",
+        "approx_time": "3:20 PM"
+    },
+    {
+        "entry_id": "361",
+        "routine_title": "The Healing",
+        "studio_code": "G2",
+        "category": "Teen Open Solo",
+        "approx_time": "3:23 PM"
+    },
+    {
+        "entry_id": "362",
+        "routine_title": "Flores No Mar",
+        "studio_code": "U",
+        "category": "Teen Open Solo",
+        "approx_time": "3:26 PM"
+    },
+    {
+        "entry_id": "363",
+        "routine_title": "Power In My Skin",
+        "studio_code": "F2",
+        "category": "Teen Open Solo",
+        "approx_time": "3:29 PM"
+    },
+    {
+        "entry_id": "364",
+        "routine_title": "Apres Moi",
+        "studio_code": "Q",
+        "category": "Teen Open Solo",
+        "approx_time": "3:32 PM"
+    },
+    {
+        "entry_id": "365",
+        "routine_title": "When A Man Loves A Woman",
+        "studio_code": "P",
+        "category": "Teen Open Solo",
+        "approx_time": "3:35 PM"
+    },
+    {
+        "entry_id": "366",
+        "routine_title": "All Is Full Of Love",
+        "studio_code": "H2",
+        "category": "Teen Open Solo",
+        "approx_time": "3:38 PM"
+    },
+    {
+        "entry_id": "367",
+        "routine_title": "All My Heroes",
+        "studio_code": "G2",
+        "category": "Teen Open Solo",
+        "approx_time": "3:42 PM"
+    },
+    {
+        "entry_id": "369",
+        "routine_title": "Daisies",
+        "studio_code": "W",
+        "category": "Teen Tap Solo",
+        "approx_time": "3:45 PM"
+    },
+    {
+        "entry_id": "370",
+        "routine_title": "Arcadia",
+        "studio_code": "S",
+        "category": "Teen Lyrical Solo",
+        "approx_time": "3:48 PM"
+    },
+    {
+        "entry_id": "371",
+        "routine_title": "My Way",
+        "studio_code": "C",
+        "category": "Teen Lyrical Solo",
+        "approx_time": "3:51 PM"
+    },
+    {
+        "entry_id": "372",
+        "routine_title": "Be Somebody's Love",
+        "studio_code": "W",
+        "category": "Teen Lyrical Solo",
+        "approx_time": "3:54 PM"
+    },
+    {
+        "entry_id": "373",
+        "routine_title": "Without A Word",
+        "studio_code": "K",
+        "category": "Teen Lyrical Solo",
+        "approx_time": "3:57 PM"
+    },
+    {
+        "entry_id": "374",
+        "routine_title": "Soft Dark Nothing",
+        "studio_code": "E",
+        "category": "Teen Lyrical Solo",
+        "approx_time": "4:00 PM"
+    },
+    {
+        "entry_id": "375",
+        "routine_title": "Underneath My Skin",
+        "studio_code": "C",
+        "category": "Teen Lyrical Solo",
+        "approx_time": "4:03 PM"
+    },
+    {
+        "entry_id": "376",
+        "routine_title": "A Lot More Feel",
+        "studio_code": "L",
+        "category": "Teen Lyrical Solo",
+        "approx_time": "4:06 PM"
+    },
+    {
+        "entry_id": "377",
+        "routine_title": "The First Time I Saw Your Face",
+        "studio_code": "P",
+        "category": "Teen Lyrical Solo",
+        "approx_time": "4:09 PM"
+    },
+    {
+        "entry_id": "378",
+        "routine_title": "I Don't Want to Set the World on Fire",
+        "studio_code": "S",
+        "category": "Teen Lyrical Solo",
+        "approx_time": "4:12 PM"
+    },
+    {
+        "entry_id": "378A",
+        "routine_title": "On My Mind",
+        "studio_code": "K2",
+        "category": "Teen Lyrical Solo",
+        "approx_time": "4:15 PM"
+    },
+    {
+        "entry_id": "379",
+        "routine_title": "Farewell",
+        "studio_code": "C",
+        "category": "Teen Lyrical Solo",
+        "approx_time": "4:19 PM"
+    },
+    {
+        "entry_id": "380",
+        "routine_title": "Seraphine",
+        "studio_code": "H2",
+        "category": "Teen Lyrical Solo",
+        "approx_time": "4:22 PM"
+    },
+    {
+        "entry_id": "381",
+        "routine_title": "Everything I Did To Get To You",
+        "studio_code": "F2",
+        "category": "Teen Lyrical Solo",
+        "approx_time": "4:25 PM"
+    },
+    {
+        "entry_id": "382",
+        "routine_title": "Crimson",
+        "studio_code": "M2",
+        "category": "Teen Lyrical Solo",
+        "approx_time": "4:28 PM"
+    },
+    {
+        "entry_id": "383",
+        "routine_title": "Bound to You",
+        "studio_code": "K",
+        "category": "Teen Lyrical Solo",
+        "approx_time": "4:31 PM"
+    },
+    {
+        "entry_id": "384",
+        "routine_title": "Party of One",
+        "studio_code": "E",
+        "category": "Teen Lyrical Solo",
+        "approx_time": "4:34 PM"
+    },
+    {
+        "entry_id": "385",
+        "routine_title": "Take Away The You",
+        "studio_code": "C",
+        "category": "Teen Lyrical Solo",
+        "approx_time": "4:37 PM"
+    },
+    {
+        "entry_id": "386",
+        "routine_title": "Goodbye Yellow Brick Road",
+        "studio_code": "Q",
+        "category": "Teen Lyrical Solo",
+        "approx_time": "4:40 PM"
+    },
+    {
+        "entry_id": "387",
+        "routine_title": "Fall In Time",
+        "studio_code": "R",
+        "category": "Teen Lyrical Solo",
+        "approx_time": "4:43 PM"
+    },
+    {
+        "entry_id": "388",
+        "routine_title": "Killing Me Softly",
+        "studio_code": "P",
+        "category": "Teen Lyrical Solo",
+        "approx_time": "4:46 PM"
+    },
+    {
+        "entry_id": "389",
+        "routine_title": "I'll Never Love Again",
+        "studio_code": "R",
+        "category": "Teen Lyrical Solo",
+        "approx_time": "4:49 PM"
+    },
+    {
+        "entry_id": "390",
+        "routine_title": "Derniere Danse",
+        "studio_code": "V",
+        "category": "Teen Specialty Solo",
+        "approx_time": "4:52 PM"
+    },
+    {
+        "entry_id": "391",
+        "routine_title": "Blue Suede Shoes",
+        "studio_code": "E",
+        "category": "Teen Specialty Solo",
+        "approx_time": "4:56 PM"
+    },
+    {
+        "entry_id": "392",
+        "routine_title": "Beneath The Smoke",
+        "studio_code": "C2",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "4:59 PM"
+    },
+    {
+        "entry_id": "393",
+        "routine_title": "Because",
+        "studio_code": "E",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "5:02 PM"
+    },
+    {
+        "entry_id": "394",
+        "routine_title": "Killing Me Softly",
+        "studio_code": "M2",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "5:05 PM"
+    },
+    {
+        "entry_id": "395",
+        "routine_title": "I Know It's Over",
+        "studio_code": "S",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "5:08 PM"
+    },
+    {
+        "entry_id": "397",
+        "routine_title": "Muerte",
+        "studio_code": "H",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "5:11 PM"
+    },
+    {
+        "entry_id": "398",
+        "routine_title": "This Place is a Shelter",
+        "studio_code": "E",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "5:14 PM"
+    },
+    {
+        "entry_id": "399",
+        "routine_title": "Close To You",
+        "studio_code": "K",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "5:17 PM"
+    },
+    {
+        "entry_id": "400",
+        "routine_title": "Reef Solo",
+        "studio_code": "Y",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "5:20 PM"
+    },
+    {
+        "entry_id": "401",
+        "routine_title": "We'll Meet Again",
+        "studio_code": "E",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "5:23 PM"
+    },
+    {
+        "entry_id": "402",
+        "routine_title": "Nicest Thing",
+        "studio_code": "E2",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "5:26 PM"
+    },
+    {
+        "entry_id": "403",
+        "routine_title": "Belief",
+        "studio_code": "E",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "5:29 PM"
+    },
+    {
+        "entry_id": "404",
+        "routine_title": "Fly Me To The Moon",
+        "studio_code": "H2",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "5:33 PM"
+    },
+    {
+        "entry_id": "406",
+        "routine_title": "Les Larmes du Silence",
+        "studio_code": "V",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "5:36 PM"
+    },
+    {
+        "entry_id": "407",
+        "routine_title": "Corridors",
+        "studio_code": "E",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "5:39 PM"
+    },
+    {
+        "entry_id": "408",
+        "routine_title": "Anomaly",
+        "studio_code": "N2",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "5:42 PM"
+    },
+    {
+        "entry_id": "409",
+        "routine_title": "Lovely",
+        "studio_code": "12",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "5:45 PM"
+    },
+    {
+        "entry_id": "410",
+        "routine_title": "Smile",
+        "studio_code": "E",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "5:48 PM"
+    },
+    {
+        "entry_id": "410A",
+        "routine_title": "A Story Untold",
+        "studio_code": "12",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "5:51 PM"
+    },
+    {
+        "entry_id": "411",
+        "routine_title": "Save Me",
+        "studio_code": "S",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "5:54 PM"
+    },
+    {
+        "entry_id": "412",
+        "routine_title": "How Strong My Love Is",
+        "studio_code": "E",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "5:57 PM"
+    },
+    {
+        "entry_id": "413",
+        "routine_title": "Run Boy Run",
+        "studio_code": "N",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "6:00 PM"
+    },
+    {
+        "entry_id": "414",
+        "routine_title": "Eclipse",
+        "studio_code": "Q",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "6:03 PM"
+    },
+    {
+        "entry_id": "415",
+        "routine_title": "Alone",
+        "studio_code": "B",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "6:06 PM"
+    },
+    {
+        "entry_id": "416",
+        "routine_title": "Dust and Water",
+        "studio_code": "E",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "6:10 PM"
+    },
+    {
+        "entry_id": "417",
+        "routine_title": "Eavesdrop",
+        "studio_code": "Q",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "6:13 PM"
+    },
+    {
+        "entry_id": "418",
+        "routine_title": "Padam Padam",
+        "studio_code": "H2",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "6:16 PM"
+    },
+    {
+        "entry_id": "419",
+        "routine_title": "Somebody That I Used to Know",
+        "studio_code": "M2",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "6:19 PM"
+    },
+    {
+        "entry_id": "420",
+        "routine_title": "The Greatest",
+        "studio_code": "F2",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "6:22 PM"
+    },
+    {
+        "entry_id": "421",
+        "routine_title": "Elenore",
+        "studio_code": "S",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "6:25 PM"
+    },
+    {
+        "entry_id": "422",
+        "routine_title": "River",
+        "studio_code": "K",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "6:28 PM"
+    },
+    {
+        "entry_id": "423",
+        "routine_title": "Vampire Empire",
+        "studio_code": "E",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "6:31 PM"
+    },
+    {
+        "entry_id": "424",
+        "routine_title": "Red Jacket",
+        "studio_code": "A",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "6:34 PM"
+    },
+    {
+        "entry_id": "425",
+        "routine_title": "Gloomy Sunday",
+        "studio_code": "P",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "6:37 PM"
+    },
+    {
+        "entry_id": "426",
+        "routine_title": "Sweet Dreams",
+        "studio_code": "H2",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "6:40 PM"
+    },
+    {
+        "entry_id": "427",
+        "routine_title": "Earthing",
+        "studio_code": "E",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "6:43 PM"
+    },
+    {
+        "entry_id": "428",
+        "routine_title": "Time",
+        "studio_code": "C",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "6:47 PM"
+    },
+    {
+        "entry_id": "429",
+        "routine_title": "U Should See Me In A Crowd",
+        "studio_code": "L",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "6:50 PM"
+    },
+    {
+        "entry_id": "430",
+        "routine_title": "Air To Air",
+        "studio_code": "A",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "6:53 PM"
+    },
+    {
+        "entry_id": "431",
+        "routine_title": "Black Flies",
+        "studio_code": "U",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "6:56 PM"
+    },
+    {
+        "entry_id": "432",
+        "routine_title": "Man Of A Thousand Faces",
+        "studio_code": "Q",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "6:59 PM"
+    },
+    {
+        "entry_id": "433",
+        "routine_title": "An Isolated Moment",
+        "studio_code": "H2",
+        "category": "Teen Contemporary Solo",
+        "approx_time": "7:02 PM"
+    },
+    {
+        "entry_id": "435",
+        "routine_title": "Fever",
+        "studio_code": "W",
+        "category": "Teen Jazz Solo",
+        "approx_time": "7:05 PM"
+    },
+    {
+        "entry_id": "435A",
+        "routine_title": "Sledgehammer",
+        "studio_code": "B2",
+        "category": "Teen Jazz Solo",
+        "approx_time": "7:08 PM"
+    },
+    {
+        "entry_id": "436",
+        "routine_title": "Turn Up the Heat",
+        "studio_code": "M2",
+        "category": "Teen Jazz Solo",
+        "approx_time": "7:11 PM"
+    },
+    {
+        "entry_id": "438",
+        "routine_title": "Thumbs",
+        "studio_code": "J",
+        "category": "Teen Jazz Solo",
+        "approx_time": "7:14 PM"
+    },
+    {
+        "entry_id": "439",
+        "routine_title": "The Sun is Hot",
+        "studio_code": "R",
+        "category": "Teen Jazz Solo",
+        "approx_time": "7:17 PM"
+    },
+    {
+        "entry_id": "440",
+        "routine_title": "Rumor Has It",
+        "studio_code": "P",
+        "category": "Teen Jazz Solo",
+        "approx_time": "7:20 PM"
+    },
+    {
+        "entry_id": "441",
+        "routine_title": "Set the Tone",
+        "studio_code": "L",
+        "category": "Teen Hip-Hop Solo",
+        "approx_time": "7:24 PM"
+    },
+    {
+        "entry_id": "442",
+        "routine_title": "Hurt So Good",
+        "studio_code": "M2",
+        "category": "Senior Musical Theatre Solo",
+        "approx_time": "8:00 PM"
+    },
+    {
+        "entry_id": "443",
+        "routine_title": "Maybe This Time",
+        "studio_code": "S",
+        "category": "Senior Musical Theatre Solo",
+        "approx_time": "8:03 PM"
+    },
+    {
+        "entry_id": "444",
+        "routine_title": "Mister Cellophane",
+        "studio_code": "D",
+        "category": "Senior Musical Theatre Solo",
+        "approx_time": "8:06 PM"
+    },
+    {
+        "entry_id": "445",
+        "routine_title": "Mack The Knife",
+        "studio_code": "R",
+        "category": "Senior Musical Theatre Solo",
+        "approx_time": "8:09 PM"
+    },
+    {
+        "entry_id": "446",
+        "routine_title": "Oh The Thinks You Can Think",
+        "studio_code": "L",
+        "category": "Senior Musical Theatre Solo",
+        "approx_time": "8:12 PM"
+    },
+    {
+        "entry_id": "447",
+        "routine_title": "Brown Eyes",
+        "studio_code": "E",
+        "category": "Senior Open Solo",
+        "approx_time": "8:15 PM"
+    },
+    {
+        "entry_id": "448",
+        "routine_title": "Can't Take My Eyes Off You",
+        "studio_code": "P",
+        "category": "Senior Open Solo",
+        "approx_time": "8:18 PM"
+    },
+    {
+        "entry_id": "449",
+        "routine_title": "Southhampton Dock",
+        "studio_code": "E",
+        "category": "Senior Open Solo",
+        "approx_time": "8:21 PM"
+    },
+    {
+        "entry_id": "450",
+        "routine_title": "Nocturne",
+        "studio_code": "H2",
+        "category": "Senior Open Solo",
+        "approx_time": "8:24 PM"
+    },
+    {
+        "entry_id": "451",
+        "routine_title": "As If We Never Said Goodbye",
+        "studio_code": "D2",
+        "category": "Senior Open Solo",
+        "approx_time": "8:27 PM"
+    },
+    {
+        "entry_id": "452",
+        "routine_title": "Superstar",
+        "studio_code": "E",
+        "category": "Senior Open Solo",
+        "approx_time": "8:30 PM"
+    },
+    {
+        "entry_id": "453",
+        "routine_title": "I can't stand the rain",
+        "studio_code": "P",
+        "category": "Senior Open Solo",
+        "approx_time": "8:33 PM"
+    },
+    {
+        "entry_id": "454",
+        "routine_title": "Why",
+        "studio_code": "E",
+        "category": "Senior Open Solo",
+        "approx_time": "8:37 PM"
+    },
+    {
+        "entry_id": "455",
+        "routine_title": "Creep",
+        "studio_code": "C",
+        "category": "Senior Lyrical Solo",
+        "approx_time": "8:40 PM"
+    },
+    {
+        "entry_id": "456",
+        "routine_title": "I Go to Sleep",
+        "studio_code": "S",
+        "category": "Senior Lyrical Solo",
+        "approx_time": "8:43 PM"
+    },
+    {
+        "entry_id": "457",
+        "routine_title": "At Last",
+        "studio_code": "D",
+        "category": "Senior Lyrical Solo",
+        "approx_time": "8:46 PM"
+    },
+    {
+        "entry_id": "458",
+        "routine_title": "I Have Nothing",
+        "studio_code": "C",
+        "category": "Senior Lyrical Solo",
+        "approx_time": "8:49 PM"
+    },
+    {
+        "entry_id": "459",
+        "routine_title": "Complex",
+        "studio_code": "E",
+        "category": "Senior Lyrical Solo",
+        "approx_time": "8:52 PM"
+    },
+    {
+        "entry_id": "460",
+        "routine_title": "I Never Dreamed You'd Leave In Summer",
+        "studio_code": "R",
+        "category": "Senior Lyrical Solo",
+        "approx_time": "8:55 PM"
+    },
+    {
+        "entry_id": "460A",
+        "routine_title": "I put a spell on you",
+        "studio_code": "P",
+        "category": "Senior Lyrical Solo",
+        "approx_time": "8:58 PM"
+    },
+    {
+        "entry_id": "461",
+        "routine_title": "Your Face",
+        "studio_code": "C",
+        "category": "Senior Lyrical Solo",
+        "approx_time": "9:01 PM"
+    },
+    {
+        "entry_id": "462",
+        "routine_title": "Unchained Melody",
+        "studio_code": "L",
+        "category": "Senior Lyrical Solo",
+        "approx_time": "9:04 PM"
+    },
+    {
+        "entry_id": "463",
+        "routine_title": "Why Try To Change Me Now",
+        "studio_code": "N",
+        "category": "Senior Lyrical Solo",
+        "approx_time": "9:07 PM"
+    },
+    {
+        "entry_id": "464",
+        "routine_title": "Last Lost Chance",
+        "studio_code": "C",
+        "category": "Senior Contemporary Solo",
+        "approx_time": "9:10 PM"
+    },
+    {
+        "entry_id": "465",
+        "routine_title": "Born To Die",
+        "studio_code": "A",
+        "category": "Senior Lyrical Solo",
+        "approx_time": "9:14 PM"
+    },
+    {
+        "entry_id": "466",
+        "routine_title": "Again",
+        "studio_code": "P",
+        "category": "Senior Lyrical Solo",
+        "approx_time": "9:17 PM"
+    },
+    {
+        "entry_id": "467",
+        "routine_title": "World Without End",
+        "studio_code": "C",
+        "category": "Senior Contemporary Solo",
+        "approx_time": "9:20 PM"
+    },
+    {
+        "entry_id": "468",
+        "routine_title": "The Circle Game",
+        "studio_code": "S",
+        "category": "Senior Contemporary Solo",
+        "approx_time": "9:23 PM"
+    },
+    {
+        "entry_id": "469",
+        "routine_title": "So I Cry",
+        "studio_code": "E",
+        "category": "Senior Contemporary Solo",
+        "approx_time": "9:26 PM"
+    },
+    {
+        "entry_id": "470",
+        "routine_title": "Take Five",
+        "studio_code": "L",
+        "category": "Senior Contemporary Solo",
+        "approx_time": "9:29 PM"
+    },
+    {
+        "entry_id": "471",
+        "routine_title": "Space And Time",
+        "studio_code": "S",
+        "category": "Senior Contemporary Solo",
+        "approx_time": "9:32 PM"
+    },
+    {
+        "entry_id": "472",
+        "routine_title": "Due East",
+        "studio_code": "E",
+        "category": "Senior Contemporary Solo",
+        "approx_time": "9:35 PM"
+    },
+    {
+        "entry_id": "473",
+        "routine_title": "Sunlit Water",
+        "studio_code": "A",
+        "category": "Senior Contemporary Solo",
+        "approx_time": "9:38 PM"
+    },
+    {
+        "entry_id": "474",
+        "routine_title": "Come Into My Arms",
+        "studio_code": "S",
+        "category": "Senior Contemporary Solo",
+        "approx_time": "9:41 PM"
+    },
+    {
+        "entry_id": "476",
+        "routine_title": "Johnsburg Illinois",
+        "studio_code": "E",
+        "category": "Senior Contemporary Solo",
+        "approx_time": "9:44 PM"
+    },
+    {
+        "entry_id": "477",
+        "routine_title": "Wonderful",
+        "studio_code": "Q",
+        "category": "Senior Contemporary Solo",
+        "approx_time": "9:47 PM"
+    },
+    {
+        "entry_id": "478",
+        "routine_title": "Southern Nights",
+        "studio_code": "S",
+        "category": "Senior Contemporary Solo",
+        "approx_time": "9:51 PM"
+    },
+    {
+        "entry_id": "479",
+        "routine_title": "Water Tower",
+        "studio_code": "E",
+        "category": "Senior Contemporary Solo",
+        "approx_time": "9:54 PM"
+    },
+    {
+        "entry_id": "480",
+        "routine_title": "Try a Little Tenderness",
+        "studio_code": "B",
+        "category": "Senior Contemporary Solo",
+        "approx_time": "9:57 PM"
+    },
+    {
+        "entry_id": "481",
+        "routine_title": "Feeling Good",
+        "studio_code": "H2",
+        "category": "Senior Contemporary Solo",
+        "approx_time": "10:00 PM"
+    },
+    {
+        "entry_id": "482",
+        "routine_title": "Following the Clock to Sleep",
+        "studio_code": "E",
+        "category": "Senior Contemporary Solo",
+        "approx_time": "10:03 PM"
+    },
+    {
+        "entry_id": "483",
+        "routine_title": "Wildflower",
+        "studio_code": "F2",
+        "category": "Senior Contemporary Solo",
+        "approx_time": "10:06 PM"
+    },
+    {
+        "entry_id": "484",
+        "routine_title": "Some Things Cosmic",
+        "studio_code": "E",
+        "category": "Senior Contemporary Solo",
+        "approx_time": "10:09 PM"
+    },
+    {
+        "entry_id": "485",
+        "routine_title": "Seven Birds",
+        "studio_code": "H2",
+        "category": "Senior Contemporary Solo",
+        "approx_time": "10:12 PM"
+    },
+    {
+        "entry_id": "486",
+        "routine_title": "Creature I Don't Know",
+        "studio_code": "E",
+        "category": "Senior Contemporary Solo",
+        "approx_time": "10:15 PM"
+    },
+    {
+        "entry_id": "487",
+        "routine_title": "All I Wanted",
+        "studio_code": "12",
+        "category": "Senior Contemporary Solo",
+        "approx_time": "10:18 PM"
+    },
+    {
+        "entry_id": "487A",
+        "routine_title": "Surrounded By Whispers",
+        "studio_code": "P2",
+        "category": "Senior Contemporary Solo",
+        "approx_time": "10:21 PM"
+    },
+    {
+        "entry_id": "488",
+        "routine_title": "Traveling Soldier",
+        "studio_code": "S",
+        "category": "Senior Contemporary Solo",
+        "approx_time": "10:24 PM"
+    },
+    {
+        "entry_id": "489",
+        "routine_title": "Bring My Flowers Now",
+        "studio_code": "W",
+        "category": "Senior Contemporary Solo",
+        "approx_time": "10:28 PM"
+    },
+    {
+        "entry_id": "490",
+        "routine_title": "Every Single Day",
+        "studio_code": "G",
+        "category": "Senior Contemporary Solo",
+        "approx_time": "10:31 PM"
+    },
+    {
+        "entry_id": "491",
+        "routine_title": "That's Life",
+        "studio_code": "V",
+        "category": "Senior Musical Theatre Solo",
+        "approx_time": "10:34 PM"
+    },
+    {
+        "entry_id": "492",
+        "routine_title": "Elizabeth Taylor",
+        "studio_code": "E",
+        "category": "Senior Contemporary Solo",
+        "approx_time": "10:37 PM"
+    },
+    {
+        "entry_id": "493",
+        "routine_title": "End Of My Life",
+        "studio_code": "C",
+        "category": "Senior Contemporary Solo",
+        "approx_time": "10:40 PM"
+    },
+    {
+        "entry_id": "494",
+        "routine_title": "A Dangerous Thing",
+        "studio_code": "L",
+        "category": "Senior Contemporary Solo",
+        "approx_time": "10:43 PM"
+    },
+    {
+        "entry_id": "495",
+        "routine_title": "Gone",
+        "studio_code": "E",
+        "category": "Senior Contemporary Solo",
+        "approx_time": "10:46 PM"
+    },
+    {
+        "entry_id": "496",
+        "routine_title": "Stages of Grief",
+        "studio_code": "M2",
+        "category": "Senior Contemporary Solo",
+        "approx_time": "10:49 PM"
+    },
+    {
+        "entry_id": "497",
+        "routine_title": "Soundtrack",
+        "studio_code": "A",
+        "category": "Senior Contemporary Solo",
+        "approx_time": "10:52 PM"
+    },
+    {
+        "entry_id": "498",
+        "routine_title": "Real House",
+        "studio_code": "E",
+        "category": "Senior Contemporary Solo",
+        "approx_time": "10:55 PM"
+    },
+    {
+        "entry_id": "498A",
+        "routine_title": "Wrath of The Unsaid",
+        "studio_code": "X",
+        "category": "Senior Contemporary Solo",
+        "approx_time": "10:58 PM"
+    },
+    {
+        "entry_id": "499",
+        "routine_title": "Peoples Faces",
+        "studio_code": "B",
+        "category": "Senior Contemporary Solo",
+        "approx_time": "11:01 PM"
+    },
+    {
+        "entry_id": "500",
+        "routine_title": "Paint It Black",
+        "studio_code": "H2",
+        "category": "Senior Contemporary Solo",
+        "approx_time": "11:05 PM"
+    },
+    {
+        "entry_id": "501",
+        "routine_title": "Doomed",
+        "studio_code": "J",
+        "category": "Senior Contemporary Solo",
+        "approx_time": "11:08 PM"
+    },
+    {
+        "entry_id": "502",
+        "routine_title": "Legs",
+        "studio_code": "M2",
+        "category": "Senior Jazz Solo",
+        "approx_time": "11:11 PM"
+    },
+    {
+        "entry_id": "503",
+        "routine_title": "Freedom",
+        "studio_code": "L",
+        "category": "Senior Jazz Solo",
+        "approx_time": "11:14 PM"
+    },
+    {
+        "entry_id": "504",
+        "routine_title": "Entrapped",
+        "studio_code": "12",
+        "category": "Senior Jazz Solo",
+        "approx_time": "11:17 PM"
+    },
+    {
+        "entry_id": "505",
+        "routine_title": "Dream On",
+        "studio_code": "M",
+        "category": "Senior Jazz Solo",
+        "approx_time": "11:20 PM"
+    },
+    {
+        "entry_id": "506",
+        "routine_title": "Dangerous",
+        "studio_code": "L",
+        "category": "Senior Jazz Solo",
+        "approx_time": "11:23 PM"
+    }
+]
