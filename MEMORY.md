@@ -61,7 +61,6 @@ A mobile-first web app for parents at the NYCDA Kansas City dance competition. S
 ```
 
 ## Lessons Learned
-- Supabase SQL Editor uses Monaco — use `window.monaco.editor.getEditors()[0].setValue()` to set content programmatically
 - The `type` action in browser automation merges lines when text has newlines — use JS/Monaco API for multi-line code entry
 - Firebase Realtime Database: Use `onValue` for live updates.
 - The `databaseURL` in the config must be correct (currently `https://dance-tracker-c3642-default-rtdb.firebaseio.com`).
