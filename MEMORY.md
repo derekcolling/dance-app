@@ -1,5 +1,10 @@
 # NYCDA KC Parent Tracker — Project Memory
 
+## Project Status (Feb 8, 2026)
+- **Current Focus**: Refining the "My Dances" user experience and Live state visibility.
+- **Milestone Reached**: The core competition tracker is fully functional with Firebase-synced "Now Playing" status, favorite management, and a robust "Find My Dancer" search flow.
+- **Recent Polish**: Implemented a "LIVE" extended FAB, replaced star icons with "NOW" pulse indicators for the current dance, and refined all modal UI elements (centering, transparency, overlap fixes).
+
 ## What This Is
 A mobile-first web app for parents at the NYCDA Kansas City dance competition. Shows the full 512-entry schedule across 2 days, lets parents favorite dances, and syncs a real-time "Now Playing" indicator via Firebase.
 
@@ -48,12 +53,11 @@ A mobile-first web app for parents at the NYCDA Kansas City dance competition. S
 
 ## Files
 ```
-/Users/derekcolling/Documents/NYCDA/
-├── index.html       ← Complete SPA (~600 lines, all inline)
+/Users/derekcolling/Documents/dance-app/
+├── index.html       ← Complete SPA (~2000 lines, all inline)
 ├── schedule.json    ← 512 dance entries (96KB)
-├── schedule.pdf     ← Original PDF schedule
 ├── vercel.json      ← Rewrites + cache headers for schedule.json
-└── .vercel/         ← Vercel project config (gitignored)
+└── MEMORY.md        ← This file
 ```
 
 ## Lessons Learned
@@ -66,14 +70,13 @@ A mobile-first web app for parents at the NYCDA Kansas City dance competition. S
 - **Day Buttons**: Strict "Green/Tan" system.
   - **Green**: Selected / Active Filter.
   - **Tan**: Unselected.
-  - No separate "Live" indicator (badges, dots, outlines) on the buttons themselves. Status is communicated by auto-selecting the live day.
-- **Auto-Selection Logic**: On initial load or "Reset" action, the app detects the current live entry and automatically sets the `day` filter to match. This ensures the corresponding Day Button turns Green, providing context.
-- **Reset Behavior**: Clicking "X" in Search or the Play FAB triggers a full reset:
-  - Clears search.
-  - Resets all dropdowns.
-  - Sets Day filter to the Live Day.
-  - Scrolls to the live entry.
-- **Header Cleanup**:
-  - Removed "Up Next" alert strip (redundant).
-  - Quick Glance bar is sticky, white background, standard text colors.
-  - Search bar clears properly and resets state.
+- **"My Dances" Management**: 
+  - **Find My Dancer Modal**: A dedicated searching interface (`#findDancerDialog`) triggered by an "Add Routine" button in the filter row or the empty state.
+  - **UI Refinements**: Search modal is opaque white, centered, with high-contrast backdrop and padded search icons to prevent overlap.
+  - **Search Source**: Searches the entire `state.entries` list (ignoring active filters) by routine title or entry ID.
+- **Live State Visuals**:
+  - **The "NOW" Icon**: In the list, the star icon is replaced with a green "NOW" pulse icon for the currently active dance.
+  - **The "LIVE" FAB**: Circular crosshair replaced with an extended pill button labelled "LIVE" + a pulsating red indicator dot. This serves as the primary "Return to Now" navigation.
+- **Auto-Selection Logic**: On initial load or "Reset" action, the app detects the current live entry and automatically sets the `day` filter to match.
+- **Reset Behavior**: Clicking "X" in Search or the "LIVE" FAB triggers a full reset (clears search, resets dropdowns, sets Day filter to Live Day, and scrolls to live entry).
+- **Sticky Persistence**: Header and filter row are sticky to maintain context while scrolling deep lists.
