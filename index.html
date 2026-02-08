@@ -859,22 +859,41 @@
       position: fixed;
       bottom: 24px;
       right: 16px;
-      width: 52px;
-      height: 52px;
-      border-radius: 50%;
-      background: var(--header-bg);
+      padding: 0 16px;
+      height: 44px;
+      min-width: 90px;
+      border-radius: var(--radius-pill);
+      background: var(--brand-green);
       color: #fff;
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: var(--shadow-lg);
+      gap: 10px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
       z-index: 90;
-      transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
-      -webkit-tap-highlight-color: transparent
+      transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), background 0.2s;
+      -webkit-tap-highlight-color: transparent;
+      border: none;
+      cursor: pointer;
     }
 
     .fab:active {
-      transform: scale(0.88)
+      transform: scale(0.92)
+    }
+
+    .live-dot {
+      width: 8px;
+      height: 8px;
+      background: #ff3b30;
+      border-radius: 50%;
+      box-shadow: 0 0 8px rgba(255, 59, 48, 0.6);
+      animation: livePulse 1.5s ease-in-out infinite;
+    }
+
+    .live-text {
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.8px;
     }
 
     .fab.has-admin {
@@ -1035,6 +1054,26 @@
         animation-duration: 0.01ms !important;
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important
+      }
+    }
+
+    @keyframes livePulse {
+      0% {
+        transform: scale(1);
+        opacity: 1;
+        box-shadow: 0 0 0 0 rgba(255, 59, 48, 0.7);
+      }
+
+      70% {
+        transform: scale(1.2);
+        opacity: 0.8;
+        box-shadow: 0 0 0 10px rgba(255, 59, 48, 0);
+      }
+
+      100% {
+        transform: scale(1);
+        opacity: 1;
+        box-shadow: 0 0 0 0 rgba(255, 59, 48, 0);
       }
     }
   </style>
@@ -1234,11 +1273,8 @@
 
   <!-- FAB -->
   <button class="fab" id="fab" aria-label="Go to now playing">
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-      stroke-linecap="round">
-      <circle cx="12" cy="12" r="3" />
-      <path d="M12 2v4m0 12v4M2 12h4m12 0h4" />
-    </svg>
+    <div class="live-dot"></div>
+    <span class="live-text">LIVE</span>
   </button>
 
   <!-- ADMIN -->
