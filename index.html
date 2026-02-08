@@ -1475,6 +1475,60 @@
       if (state.currentEntryIndex >= 0) scrollToEntry(state.currentEntryIndex);
     }
 
+    function scrollToCurrentTime() {
+      const now = new Date();
+      const currentMins = now.getHours() * 60 + now.getMinutes();
+      const today = 2; // As requested: "Use day 2 for today"
+
+      const todayEntries = state.entries.filter(e => e.day === today);
+      if (todayEntries.length === 0) return;
+
+      // Find the last entry that has already started or is starting now
+      let target = todayEntries[0];
+      for (const e of todayEntries) {
+        if (e.timeMin <= currentMins) {
+          target = e;
+        } else {
+          break;
+        }
+      }
+
+      if (target) {
+        resetFiltersForDay(today);
+        requestAnimationFrame(() => scrollToEntry(target.index));
+      }
+    }
+
+    function resetFiltersForDay(day) {
+      state.activeTab = 'all';
+      tabAll.classList.add('active');
+      tabFavorites.classList.remove('active');
+      state.searchQuery = '';
+      searchInput.value = '';
+      searchClear.hidden = true;
+      if (day === 1) {
+        state.day1Active = true;
+        state.day2Active = false;
+        dayChip1.classList.add('active');
+        dayChip2.classList.remove('active');
+      } else {
+        state.day1Active = false;
+        state.day2Active = true;
+        dayChip1.classList.remove('active');
+        dayChip2.classList.add('active');
+      }
+      state.filterStudio = '';
+      state.filterAge = '';
+      state.filterGenre = '';
+      state.filterType = '';
+      filterStudio.value = '';
+      filterAge.value = '';
+      filterGenre.value = '';
+      filterType.value = '';
+      [filterStudio, filterAge, filterGenre, filterType].forEach(s => s.classList.remove('has-value'));
+      renderCards();
+    }
+
     function resetFiltersAndGoToNow() {
       state.activeTab = 'all';
       tabAll.classList.add('active');
@@ -1622,6 +1676,13 @@
         renderCards();
         updateQuickGlance();
         updateAdminDisplay();
+
+        // Auto-scroll to current time on first load if nothing is "Now Playing" yet
+        if (state.currentEntryIndex === -1) {
+          scrollToCurrentTime();
+        } else {
+          requestAnimationFrame(() => scrollToNowPlaying());
+        }
       } catch (err) {
         console.error('Failed to load schedule:', err);
         skeletonLoader.hidden = true;
