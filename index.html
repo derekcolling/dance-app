@@ -545,6 +545,42 @@
       animation: pulse 1.5s ease-in-out infinite
     }
 
+    .now-action-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--brand-green);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 10px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      flex-shrink: 0;
+      align-self: center;
+      box-shadow: 0 4px 12px rgba(97, 122, 85, 0.3);
+      animation: pulse-shadow 2s infinite;
+      line-height: 1;
+      gap: 2px;
+    }
+
+    @keyframes pulse-shadow {
+      0% {
+        box-shadow: 0 0 0 0 rgba(97, 122, 85, 0.4);
+      }
+
+      70% {
+        box-shadow: 0 0 0 6px rgba(97, 122, 85, 0);
+      }
+
+      100% {
+        box-shadow: 0 0 0 0 rgba(97, 122, 85, 0);
+      }
+    }
+
     /* ======== Favorite Button ======== */
     .fav-btn {
       width: 44px;
@@ -1323,44 +1359,57 @@
       }
     }
 
-    function buildCardHTML(e) {
-      const isFav = state.favorites.has(e.entryId);
-      const isPassed = state.currentEntryIndex >= 0 && e.index < state.currentEntryIndex;
-      const isNow = state.currentEntryIndex >= 0 && e.index === state.currentEntryIndex;
-      const entriesAway = state.currentEntryIndex >= 0 ? e.index - state.currentEntryIndex : -1;
+    function buildCardHTML(entry) {
+      const isNow = (state.currentEntryIndex !== -1 && entry.index === state.currentEntryIndex);
+      const isPassed = (state.currentEntryIndex !== -1 && entry.index < state.currentEntryIndex);
 
-      let cls = 'card';
-      if (isPassed) cls += ' passed';
-      if (isNow) cls += ' now-playing';
+      const cardClass = `card ${isNow ? 'now-playing' : ''} ${isPassed ? 'passed' : ''}`;
 
+      // Determine what to show in the action column (Right side)
+      // If it's NOW playing, show the NOW icon. Otherwise, show the Favorite button.
+      let actionHTML = '';
+      if (isNow) {
+        actionHTML = `
+          <div class="now-action-icon">
+            <span>NOW</span>
+          </div>
+        `;
+      } else {
+        const isFav = state.favorites.has(entry.entryId);
+        actionHTML = `
+          <button class="fav-btn ${isFav ? 'active' : ''}" onclick="toggleFavorite('${entry.entryId}', this)">
+            <svg class="star-icon" width="22" height="22" viewBox="0 0 24 24" fill="${isFav ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </button>
+        `;
+      }
+
+      // Re-integrating countdownHTML logic based on original function's intent
       let countdownHTML = '';
+      const entriesAway = state.currentEntryIndex >= 0 ? entry.index - state.currentEntryIndex : -1;
+      const isFav = state.favorites.has(entry.entryId);
       if (isFav && !isPassed && !isNow && entriesAway > 0) {
         const mins = entriesAway * MINUTES_PER_ENTRY;
         let urgency = entriesAway <= 5 ? 'urgent' : entriesAway <= 15 ? 'soon' : 'later';
         countdownHTML = `<div class="card-countdown ${urgency}">${entriesAway} away &middot; ~${mins}m</div>`;
       }
 
-      const nowLabelHTML = isNow ? '<div class="now-label"><div class="pulse-dot"></div> NOW</div>' : '';
-
-      return `<div class="${cls}" data-entry-id="${e.entryId}" data-index="${e.index}">
-        ${nowLabelHTML}
-        <div class="card-badge">${e.entryId}</div>
+      return `<div id="routine-${entry.entryId}" class="${cardClass}" data-id="${entry.entryId}" data-index="${entry.index}">
+        <div class="card-badge">${entry.entryId}</div>
         <div class="card-content">
-          <div class="card-title">${escapeHTML(e.title)}</div>
+          <div class="card-title">${escapeHTML(entry.title)}</div>
           <div class="card-meta">
-            <span class="studio-badge">${escapeHTML(e.studioCode)}</span>
+            <span class="studio-badge">${escapeHTML(entry.studioCode)}</span>
             <span class="meta-dot">&middot;</span>
-            <span>${escapeHTML(e.time)}</span>
+            <span>${escapeHTML(entry.time)}</span>
             <span class="meta-dot">&middot;</span>
-            <span>${escapeHTML(e.category)}</span>
+            <span>${escapeHTML(entry.category)}</span>
+             ${entry.subCategory ? `<span class="meta-dot">•</span><span>${entry.subCategory}</span>` : ''}
           </div>
           ${countdownHTML}
         </div>
-        <button class="fav-btn${isFav ? ' active' : ''}" data-entry-id="${e.entryId}" aria-label="${isFav ? 'Remove from favorites' : 'Add to favorites'}">
-          <svg class="star-icon" width="20" height="20" viewBox="0 0 24 24" fill="${isFav ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="${isFav ? '1' : '1.5'}">
-            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-          </svg>
-        </button>
+        ${actionHTML}
       </div>`;
     }
 
