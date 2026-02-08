@@ -1497,6 +1497,27 @@
 
       if (target) {
         console.log(`Auto-scrolled to ${target.entryId} (${target.time}) for time ${now.toLocaleTimeString()}`);
+
+        // Force update local state immediately so UI is correct
+        state.currentEntryIndex = target.index;
+        updateAdminDisplay(); // Ensure admin UI reflects this too
+
+        // Attempt to sync with Firebase
+        // We set a flag to ignore the next incoming firebase update if it matches the OLD state
+        // this prevents the "stale" firebase value from reverting our local change immediately
+        state.ignoreNextFirebaseUpdate = true;
+
+        const tryUpdate = () => {
+          if (db && state.isConnected) {
+            updateFirebaseEntry(target.index);
+            console.log('Synced Firebase with time-based entry:', target.entryId);
+          } else {
+            // Retry a few times if connection isn't ready
+            setTimeout(tryUpdate, 500);
+          }
+        };
+        tryUpdate();
+
         resetFiltersForDay(today);
         requestAnimationFrame(() => scrollToEntry(target.index));
       }
