@@ -1755,12 +1755,19 @@
       const entryRef = ref(db, 'competition/current_entry_index');
       onValue(entryRef, snap => {
         const val = snap.val();
-        state.currentEntryIndex = (val !== null && val !== undefined) ? parseInt(val, 10) : -1;
+        // TEMPORARY BYPASS: Ignore Firebase value, rely on local time calculation
+        // state.currentEntryIndex = (val !== null && val !== undefined) ? parseInt(val, 10) : -1;
+
+        // Instead, force a time-based check if we haven't already
+        if (state.currentEntryIndex === -1) {
+          scrollToCurrentTime();
+        }
+
         if (state.loaded) {
           renderCards();
           updateQuickGlance();
           updateAdminDisplay();
-          requestAnimationFrame(() => scrollToNowPlaying());
+          // requestAnimationFrame(() => scrollToNowPlaying());
         }
       });
     }
@@ -1852,6 +1859,7 @@
         state.ignoreNextFirebaseUpdate = true;
 
         const tryUpdate = () => {
+          /* TEMPORARY DISABLE: Don't sync local time back to Firebase
           if (db && state.isConnected) {
             updateFirebaseEntry(target.index);
             console.log('Synced Firebase with time-based entry:', target.entryId);
@@ -1859,6 +1867,7 @@
             // Retry a few times if connection isn't ready
             setTimeout(tryUpdate, 500);
           }
+          */
         };
         tryUpdate();
 
@@ -1920,7 +1929,10 @@
       [filterStudio, filterAge, filterGenre, filterType].forEach(s => s.classList.remove('has-value'));
       populateFilters(); // Re-populate filters to update "Add Routine" button visibility
       renderCards();
-      requestAnimationFrame(() => scrollToNowPlaying());
+      renderCards();
+      // requestAnimationFrame(() => scrollToNowPlaying());
+      // Force time-based scroll instead of "Now Playing" index
+      scrollToCurrentTime();
     }
 
     // ============================================================
