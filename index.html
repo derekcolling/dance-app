@@ -1483,17 +1483,20 @@
       const todayEntries = state.entries.filter(e => e.day === today);
       if (todayEntries.length === 0) return;
 
-      // Find the last entry that has already started or is starting now
+      // Find the entry closest to the current time
       let target = todayEntries[0];
+      let minDiff = Infinity;
+
       for (const e of todayEntries) {
-        if (e.timeMin <= currentMins) {
+        const diff = Math.abs(e.timeMin - currentMins);
+        if (diff < minDiff) {
+          minDiff = diff;
           target = e;
-        } else {
-          break;
         }
       }
 
       if (target) {
+        console.log(`Auto-scrolled to ${target.entryId} (${target.time}) for time ${now.toLocaleTimeString()}`);
         resetFiltersForDay(today);
         requestAnimationFrame(() => scrollToEntry(target.index));
       }
