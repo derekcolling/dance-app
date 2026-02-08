@@ -600,9 +600,25 @@
       transform: scale(0.92)
     }
 
-    .fav-btn.active {
-      color: var(--caramel-gold);
-      background: var(--favorite-bg)
+    .search-bar {
+      display: flex;
+      align-items: center;
+      background: var(--sand);
+      border-radius: var(--radius-pill);
+      padding: 0 12px;
+      height: 48px;
+    }
+
+    .search-bar input {
+      border: none;
+      background: transparent;
+      padding: 0 8px;
+      font-size: 16px;
+      outline: none;
+      width: 100%;
+      flex: 1;
+      height: 100%;
+      color: var(--text-primary);
     }
 
     .fav-btn .star-icon {
@@ -618,27 +634,31 @@
     }
 
     /* ======== Find Dancer Modal ======== */
+    /* ======== Find Dancer Modal ======== */
     .find-dancer-modal {
-      border: none;
+      border: 1px solid var(--sand);
       border-radius: var(--radius-card);
       padding: 0;
-      width: 100%;
-      max-width: 600px;
+      width: 90%;
+      max-width: 500px;
       height: 80vh;
       max-height: 800px;
       background: var(--bg-color);
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
       flex-direction: column;
+      margin: auto;
+      position: fixed;
+      inset: 0;
     }
 
     .find-dancer-modal::backdrop {
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.6);
       backdrop-filter: blur(2px);
     }
 
     .find-dancer-modal[open] {
       display: flex;
-      animation: slideUp 0.3s ease-out;
+      animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     @keyframes slideUp {
